@@ -26,7 +26,7 @@
 </head>
 <body>
 	<!-- contextPath -->
-	<c:set var='contextPath' value='${pageContext.servletContext.contextPath }' scope='application'/>
+	<c:set var='contextPath' value='${ pageContext.servletContext.contextPath }' scope='application'/>
 	 <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
@@ -36,13 +36,13 @@
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li>
         	<a href="#" class="nav-link px-2 link-secondary">
-				<img alt="logo" src="image/headerLogo.png" id='headerLogo'>
+				<img alt="logo" src="${ contextPath }/image/headerLogo.png" id='headerLogo'>
 			</a>
         </li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">hi</a>
+        <a href="views/cs/FAQ.jsp" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">hi</a>
         &nbsp;&nbsp;|&nbsp;&nbsp;
 		<a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary link</a>
       </div>

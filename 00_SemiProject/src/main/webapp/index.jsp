@@ -8,12 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file='WEB-INF/views/common/logoBar.jsp' %>
+	<%@ include file='views/common/logoBar.jsp' %>
 
 	<br><br><br><br><br><br><br><br><br>
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	
 	
-	<%@ include file='WEB-INF/views/common/footer.jsp' %>
+	<%@ include file='views/common/footer.jsp' %>
 </body>
 </html>
