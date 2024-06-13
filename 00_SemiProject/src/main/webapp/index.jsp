@@ -9,17 +9,17 @@
 <body>
 	<%@ include file='WEB-INF/views/common/logoBar.html' %>
 	
-	<br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><hr>
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	
 	<div id='footer'></div>
 	
 	<%@ include file='WEB-INF/views/common/footer.html' %>
-	<!-- < script>
+	<%-- <script script>
 		$(function(){
 			$('#header').load("WEB-INF/views/common/logoBar.html");
 			$('#footer').load("WEB-INF/views/common/footer.html");
 		})
-	</script> -->
+	</script> --%>
 </body>
 </html>
