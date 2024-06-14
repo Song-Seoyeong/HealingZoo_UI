@@ -11,71 +11,53 @@
 	#mainCates>li{display: inline-block; margin: 45px 110px; }
 	.mainCateName{font-size: 25px; color: white; text-decoration: none;}
 	.subCategory{background: white; position: absolute; border-radius: 20px; display: none;}
-	.subCategory>li{display: inline-block; margin: 10px;}
+	.subCategory>li{visibility: hidden; margin: 10px;}
 	.subCategory a{ color: #65B741; font-size: 15px;}
-	.reverse{display: block;}
+	.reverse{visibility: visible;}
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<div id='mainCategoryBar'>
-		<ul id='mainCates'>
-			<li>
-				<a href='#' class='mainCateName' id='zooInfo'>동물원 소개</a>
-				<ul class='subCategory'>
-					<li>
-						<a href='#'>인사말</a>
-					</li>
-					<li>
-						<a href='#'>오시는 길</a>
-					</li>
-					<li>
-						<a href='#'>프로그램 안내</a>
-					</li>
-					<li>
-						<a href='#'>운영시간 및 입장금액 안내</a>
-					</li>
-					<li>
-						<a href='#'>공지사항</a>
-					</li>
+	<div class="container-fluid text-center" style='width: 100%'>
+		<div class="row" id='mainCategoryBar'>
+		    <div class="col">
+		    	<a href='#' class='mainCateName' id='zooInfo'>동물원 소개</a>
+		    	<ul class="list-group list-group-horizontal subCategory">
+				  <li class="list-group-item"><a href='#'>인사말</a></li>
+				  <li class="list-group-item"><a href='#'>오시는 길</a></li>
+				  <li class="list-group-item"><a href='#'>프로그램 안내</a></li>
+				  <li class="list-group-item"><a href='#'>운영시간 및 입장금액 안내</a></li>
+				  <li class="list-group-item"><a href='#'>공지사항</a></li>
 				</ul>
-			</li>
-			<li>
-				<a href='#' class='mainCateName'>동물 소개</a>
-				<ul class='subCategory'>
-					<li>
-						<a href='#'>가족 소개</a>
-					</li>
-					<li>
-						<a href='#'>마스코트</a>
-					</li>
+		    </div>
+		    <div class="col">
+		    	<a href='#' class='mainCateName' id='zooInfo'>동물 소개</a>
+		    	<ul class="list-group list-group-horizontal subCategory">
+				  <li class="list-group-item">가족 소개</li>
+				  <li class="list-group-item">마스코트</li>
 				</ul>
-			</li>
-			<li>
-				<a href='#' class='mainCateName'>커뮤니티</a>
-				<ul class='subCategory'>
-					<li>
-						<a href='#'>후기 게시판</a>
-					</li>
-					<li>
-						<a href='#'>예약 게시판</a>
-					</li>
+		    </div>
+		    <div class="col">
+				<a href='#' class='mainCateName' id='zooInfo'>커뮤니티</a>
+			    <ul class="list-group list-group-horizontal subCategory">
+				  <li class="list-group-item">후기 게시판</li>
+				  <li class="list-group-item">예약 게시판</li>
 				</ul>
-			</li>
-			<li>
-				<a href='#' class='mainCateName'>고객 센터</a>
-				<ul class='subCategory'>
-					<li>
-					<a href='#'>자주 묻는 Q&A</a>
-					</li>
-					<li>
-						<a href='#'>문의 게시판</a>
-					</li>
+			</div>
+		    <div class="col">
+				<a href='#' class='mainCateName' id='zooInfo'>고객 센터</a>
+		    	<ul class="list-group list-group-horizontal subCategory">
+				  <li class="list-group-item">자주 묻는 Q&A</li>
+				  <li class="list-group-item">문의 게시판</li>
+				  <li class="list-group-item">프로그램 안내</li>
+				  <li class="list-group-item">운영시간 및 입장금액 안내</li>
+				  <li class="list-group-item">공지사항</li>
 				</ul>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
+	<div >
 	<script>
 		$(() =>{
 			/* const mainCategorys = document.getElementsByClassName('mainCateName');
