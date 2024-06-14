@@ -4,7 +4,7 @@
 <html>
 <head>
 <style>
-	.margin{width: 100%; height: 700px;}
+	.margin{width: 100%; height: 70px;}
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -19,7 +19,7 @@
 	<div class="row">
 	    <div class="col">
 	    </div>
-	    <div class="col-6">
+	    <div class="col-7">
 			<div class="accordion" id="accordionExample">
 			  <div class="accordion-item">
 			    <h2 class="accordion-header">
