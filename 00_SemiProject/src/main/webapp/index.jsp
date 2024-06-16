@@ -5,7 +5,10 @@
 <head>
 <%@ taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core" %>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Welcom to Healing Zoo</title>
+<style>
+	a{color: red; text-decoration: none;}
+</style>
 </head>
 <body>
 	<%@ include file='views/common/logoBar.jsp' %>
@@ -26,13 +29,13 @@
 	    	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active" data-bs-interval="2000">
-						<img src="${ contextPath }/image/banner01.png" class="d-block w-100" alt="배너01">
+						<a href='#'><img src="${ contextPath }/image/banner01.png" class="d-block w-100" alt="배너01"></a>
 					</div>
 					<div class="carousel-item" data-bs-interval="2000">
-						<img src="${ contextPath }/image/banner02.png" class="d-block w-100" alt="배너02">
+						<a href=''><img src="${ contextPath }/image/banner02.png" class="d-block w-100" alt="배너02"></a>
 					</div>
 					<div class="carousel-item">
-						<img src="${ contextPath }/image/banner03.png" class="d-block w-100" alt="배너03">
+						<a href=''><img src="${ contextPath }/image/banner03.png" class="d-block w-100" alt="배너03"></a>
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -48,8 +51,37 @@
 	    <div class="col">
 		</div>
 	</div>
-	
-
+	<div style='margin: 3%'></div>
+	<div class="row text-center" height='330px'>
+	    <div class="col"></div>
+	    <div class="col-4">
+	    	<div class="card text-bg-dark border-light" style='height: 330px;'>
+			  <img src="${contextPath}/image/animalCare1.jpg" class="card-img" alt="예약게시판"  style='height: 330px; opacity:50%'>
+			  <div class="card-img-overlay">
+			  	<br><br><br>
+			    <h3 class="card-title"><b>힐링 동물원에 오신걸 환영합니다!</b></h3>
+			    <p class="card-text">
+			    	다양한 프로그램 방문 예약과 상품 구매로<br>
+			    	멸종 위기종 동물 보호에 여러분의 힘을 더해주세요
+			    </p>
+			    <a href="#" class="card-link" style='font-weight: bold; color: red; text-decoration: none;'>방문 예약 하기 >> </a>
+			  </div>
+			</div>
+	    </div>
+	    <div class="col-4">
+	    	<div class="card text-bg-dark border-light" style='height: 330px;'>
+			  <img src="${contextPath}/image/ferret.jpg" class="card-img" alt="가족소개"  style='height: 330px; opacity:50%'>
+			  <div class="card-img-overlay">
+			  	<br><br><br><br>
+			    <h3 class="card-title"><b>멸종 위기에서 우리를 구해ZoO!!</b></h3>
+			    <br><br>
+			   	<a href="#" class="card-link" style='font-weight: bold; color: red; text-decoration: none;'> 동물 친구들 보러가기 >> </a>
+			  </div>
+			</div>
+	    </div>
+	    <div class="col"  style='height: 330px;'></div>
+    </div>
+	<div style='margin: 10%'></div>
 
 
 

@@ -43,7 +43,7 @@
 	      <div class="col-md-3 text-end">
 	        <a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">회원가입</a>
 	        &nbsp;&nbsp;|&nbsp;&nbsp;
-			<a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">로그인</a>
+			<a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">로그인</a>&nbsp;&nbsp;&nbsp;&nbsp;
 	      </div>
 	    </header>
 	</div>
