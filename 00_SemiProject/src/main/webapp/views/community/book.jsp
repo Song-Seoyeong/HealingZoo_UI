@@ -21,7 +21,7 @@
 	  <div class="row">
 	    <div class="col"></div>
 	    <div class="col-8 text-start">
-	    	 <h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">문의 게시판</h2>
+	    	 <h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">예약 게시판</h2>
 	    </div>
 	    <div class="col"></div>
 	  </div>
@@ -110,7 +110,7 @@
 			    	<select name='searchOption'>
 					  <option selected>-----</option>
 					  <option value="title">제목</option>
-					  <option value="writer">핸드폰 번호</option>
+					  <option value="writer">핸드폰번호</option>
 					</select>
 					&nbsp;&nbsp;
 			    	<input type='text' size='30' placeholder='제목/핸드폰번호로 검색이 가능합니다'/>

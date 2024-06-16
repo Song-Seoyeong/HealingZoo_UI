@@ -21,10 +21,10 @@
 		<div class="row" id='mainCategoryBar'>
 		    <div class="col">
 		    	<br><br>
-		    	<a href='#' class='mainCateName' id='zooInfo'>동물원 소개</a>
+		    	<a href='${ contextPath }/views/zooInfo/greeting.jsp' class='mainCateName' id='zooInfo'>동물원 소개</a>
 		    	<div class="subCategory">
 			    	<ul>
-					  <li><a href='#'>인사말</a></li>
+					  <li><a href='${ contextPath }/views/zooInfo/greeting.jsp'>인사말</a></li>
 					  <li><a href='#'>오시는 길</a></li>
 					  <li><a href='#'>프로그램 안내</a></li>
 					  <li><a href='#'>운영시간 및 입장금액 안내</a></li>
@@ -44,11 +44,11 @@
 		    </div>
 		    <div class="col">
 		    	<br><br>
-				<a href='#' class='mainCateName' id='zooInfo'>커뮤니티</a>
+				<a href='${ contextPath }/views/community/review.jsp' class='mainCateName' id='zooInfo'>커뮤니티</a>
 				<div class="subCategory">
 				    <ul>
-					  <li><a href='#'>후기 게시판</a></li>
-					  <li style='width: 120px;'><a href='#'>예약 게시판</a></li>
+					  <li><a href='${ contextPath }/views/community/review.jsp'>후기 게시판</a></li>
+					  <li style='width: 120px;'><a href='${ contextPath }/views/community/book.jsp'>예약 게시판</a></li>
 					</ul>
 				</div>
 			</div>

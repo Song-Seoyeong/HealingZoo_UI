@@ -88,28 +88,10 @@
 
 	<ol>
 		<li>
-			<a href=''>동물원소개</a> 
-			<!-- 여기 링크는 메인 카테고리별로 클릭시 처음에 진입할 서브 카테고리 경로 올려주세요 -->
-			<ul>
-				<li><a href='#'>인사말</a></li>
-				<li><a href='#'>오시는길</a></li>
-				<li><a href='#'>프로그램안내</a></li>
-				<li><a href='#'>운영시간 및 안내요금</a></li>
-				<li><a href='#'>공지사항</a></li>
-			</ul>
-		</li>
-		<li>
 			<a href=''>동물소개</a>
 			<ul>
 				<li><a href='#'>가족 소개</a></li>
 				<li><a href='#'>마스코트</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href=''>커뮤니티</a>
-			<ul>
-				<li><a href='#'>후기 게시판</a></li>
-				<li><a href='#'>예약 게시판</a></li>
 			</ul>
 		</li>
 		<li>
@@ -120,7 +102,7 @@
 			</ul>
 		</li>
 		<li>
-			<a href=''>관리자페이지</a>
+			<a href='views/adminPage/notice.jsp'>관리자페이지</a>
 			<ul>
 				<li><a href='views/adminPage/notice.jsp'>공지사항</a></li>
 				<li><a href='#'>문의리스트</a></li>

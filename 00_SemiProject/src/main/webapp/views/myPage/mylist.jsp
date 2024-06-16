@@ -39,10 +39,10 @@
 		<!-- info  -->
 		<div style="width:800px; float:right" >
 			<h3>
-				<img src="../../image/sidebar.svg" style="height:50px"/>
+				<img src="${ contextPath }/image/sidebar.svg" style="height:50px"/>
 				내 게시글 보기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="text" name="search" placeholder="제목/작성자로 검색"/>&nbsp;&nbsp;
-				<img src="../../image/search.svg" id='searchIcon'>
+				<img src="${ contextPath }/image/search.svg" id='searchIcon'>
 			</h3>
 	   		<hr style="border:0; height:5px; background:black"/>
 			<table class="table">
