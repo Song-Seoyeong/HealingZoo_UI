@@ -117,17 +117,10 @@
 			</ul>
 		</li>
 		<li>
-			<a href=''>고객센터</a>
+			<a href='views/myPage/myinfo.jsp'>마이페이지</a>
 			<ul>
-				<li><a href='views/cs/FAQ.jsp'>자주 묻는 Q&A</a></li>
-				<li><a href='#'>문의 게시판</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href=''>마이페이지</a>
-			<ul>
-				<li><a href='views/MyInfo/myinfo.jsp'>내 정보 수정</a></li>
-				<li><a href='views/MyList/mylist.jsp'>내 게시글 보기</a></li>
+				<li><a href='views/myPage/myinfo.jsp'>내 정보 수정</a></li>
+				<li><a href='views/myPage/mylist.jsp'>내 게시글 보기</a></li>
 			</ul>
 		</li>
 		<li>
