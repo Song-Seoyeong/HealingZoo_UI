@@ -23,11 +23,11 @@
 			<div class="accordion" id="accordionExample">
 			  <div class="accordion-item">
 			    <h2 class="accordion-header">
-			      <button class="accordion-button" type="button" style="background: white; border: 2px solid #60A869;" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			      <button class="accordion-button" type="button" style="background: white; border: 2px solid #60A869;" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 			       <strong>Q. 동물원의 운영시간은 어떻게 되나요?</strong>
 			      </button>
 			    </h2>
-			    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+			    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 			      <div class="accordion-body" style='background: #F3F3F3; border: 1px solid #60A869;'>
 			        	A. 저희 동물원의 운영 시간은 다음과 같습니다<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;평일: 오전 9시 ~ 오후 6시<br>
