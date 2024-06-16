@@ -20,6 +20,7 @@
 	    <div class="col">
 	    </div>
 	    <div class="col-7">
+	    	 <h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">자주 묻는 Q&A</h2>
 			<div class="accordion" id="accordionExample">
 			  <div class="accordion-item">
 			    <h2 class="accordion-header">
