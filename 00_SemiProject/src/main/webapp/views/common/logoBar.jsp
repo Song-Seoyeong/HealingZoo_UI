@@ -15,8 +15,7 @@
 <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
 <style type="text/css">
-	.container{width: 100%}
-	body{font-family: 'NanumSquareRound';}
+	body{font-family: 'NanumSquareRound'; margin:0px;}
 	#headerLogo{width: 134px; height: 43px;}
 </style>
 
@@ -27,27 +26,27 @@
 <body>
 	<!-- contextPath -->
 	<c:set var='contextPath' value='${ pageContext.servletContext.contextPath }' scope='application'/>
-	 <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        
-      </div>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li>
-        	<a href="${ contextPath }" class="nav-link px-2 link-secondary">
-				<img alt="logo" src="${ contextPath }/image/headerLogo.png" id='headerLogo'>
-			</a>
-        </li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">회원가입</a>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-		<a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">로그인</a>
-      </div>
-    </header>
-  </div>
+	<div class="container-fluid">
+	    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+	      <div class="col-md-3 mb-2 mb-md-0">
+	        
+	      </div>
+	
+	      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+	        <li>
+	        	<a href="${ contextPath }" class="nav-link px-2 link-secondary">
+					<img alt="logo" src="${ contextPath }/image/headerLogo.png" id='headerLogo'>
+				</a>
+	        </li>
+	      </ul>
+	
+	      <div class="col-md-3 text-end">
+	        <a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">회원가입</a>
+	        &nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">로그인</a>
+	      </div>
+	    </header>
+	</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
