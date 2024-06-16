@@ -86,10 +86,6 @@
 
 
 
-
-
-
-
 	<ol>
 		<li>
 			<a href=''>동물원소개</a> 
@@ -126,7 +122,7 @@
 		<li>
 			<a href=''>관리자페이지</a>
 			<ul>
-				<li><a href='#'>공지사항</a></li>
+				<li><a href='views/adminPage/notice.jsp'>공지사항</a></li>
 				<li><a href='#'>문의리스트</a></li>
 				<li><a href='#'>후기리스트</a></li>
 				<li><a href='#'>예약리스트</a></li>
