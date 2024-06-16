@@ -55,8 +55,8 @@
 		<li>
 			<a href=''>마이페이지</a>
 			<ul>
-				<li><a href='views/MyList/mylist.jsp'>내 정보 수정</a></li>
-				<li><a href='views/MyPage/mypage.jsp'>내 게시글 보기</a></li>
+				<li><a href='views/MyInfo/myinfo.jsp'>내 정보 수정</a></li>
+				<li><a href='views/MyList/mylist.jsp'>내 게시글 보기</a></li>
 			</ul>
 		</li>
 		<li>
