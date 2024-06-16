@@ -15,8 +15,7 @@
 <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
 <style type="text/css">
-	.container{width: 100%}
-	body{font-family: 'NanumSquareRound';}
+	body{font-family: 'NanumSquareRound'; margin:0px;}
 	#headerLogo{width: 134px; height: 43px;}
 </style>
 
