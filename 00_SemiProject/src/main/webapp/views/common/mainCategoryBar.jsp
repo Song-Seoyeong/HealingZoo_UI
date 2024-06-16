@@ -5,75 +5,74 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <style>
-	#mainCategoryBar{position: relative; width: 100%; height: 150px; border-radius: 0px 0px 20px 20px; background: #65B741;}
-	.mainCateName:hover{font-weight: bold; text-decoration: underline;}
-	#mainCates{position: absolute;}
-	#mainCates>li{display: inline-block; margin: 45px 110px; }
+	#mainCategoryBar{height: 150px; border-radius: 0px 0px 20px 20px; background: #65B741;}
+	.mainCateName:hover{font-weight: bold;}
 	.mainCateName{font-size: 25px; color: white; text-decoration: none;}
-	.subCategory{background: white; position: absolute; border-radius: 20px; display: none;}
-	.subCategory>li{visibility: hidden; margin: 10px;}
-	.subCategory a{ color: #65B741; font-size: 15px;}
-	.reverse{visibility: visible;}
+	.subCategory{background: white; border-radius: 20px; visibility: hidden; height: 30px; position: absolute;}
+	.subCategory>li{margin: 10px; display: inline-block;}
+	.subCategory a{color: #65B741; font-size: 15px; text-decoration: none;}
+	.subCategory a:hover{font-weight: bold;}
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="container-fluid text-center" style='width: 100%'>
+	<div class="container-fluid text-center">
 		<div class="row" id='mainCategoryBar'>
 		    <div class="col">
+		    	<br><br>
 		    	<a href='#' class='mainCateName' id='zooInfo'>동물원 소개</a>
-		    	<ul class="list-group list-group-horizontal subCategory">
-				  <li class="list-group-item"><a href='#'>인사말</a></li>
-				  <li class="list-group-item"><a href='#'>오시는 길</a></li>
-				  <li class="list-group-item"><a href='#'>프로그램 안내</a></li>
-				  <li class="list-group-item"><a href='#'>운영시간 및 입장금액 안내</a></li>
-				  <li class="list-group-item"><a href='#'>공지사항</a></li>
+		    	<ul class="subCategory">
+				  <li><a href='#'>인사말</a></li>
+				  <li><a href='#'>오시는 길</a></li>
+				  <li><a href='#'>프로그램 안내</a></li>
+				  <li><a href='#'>운영시간 및 입장금액 안내</a></li>
+				  <li><a href='#'>공지사항</a></li>
 				</ul>
 		    </div>
 		    <div class="col">
+		    	<br><br>
 		    	<a href='#' class='mainCateName' id='zooInfo'>동물 소개</a>
-		    	<ul class="list-group list-group-horizontal subCategory">
-				  <li class="list-group-item">가족 소개</li>
-				  <li class="list-group-item">마스코트</li>
+		    	<ul class="subCategory">
+				  <li><a href='#'>가족 소개</a></li>
+				  <li><a href='#'>마스코트</a></li>
 				</ul>
 		    </div>
 		    <div class="col">
+		    	<br><br>
 				<a href='#' class='mainCateName' id='zooInfo'>커뮤니티</a>
-			    <ul class="list-group list-group-horizontal subCategory">
-				  <li class="list-group-item">후기 게시판</li>
-				  <li class="list-group-item">예약 게시판</li>
+			    <ul class="subCategory">
+				  <li><a href='#'>후기 게시판</a></li>
+				  <li><a href='#'>예약 게시판</a></li>
 				</ul>
 			</div>
 		    <div class="col">
-				<a href='#' class='mainCateName' id='zooInfo'>고객 센터</a>
-		    	<ul class="list-group list-group-horizontal subCategory">
-				  <li class="list-group-item">자주 묻는 Q&A</li>
-				  <li class="list-group-item">문의 게시판</li>
-				  <li class="list-group-item">프로그램 안내</li>
-				  <li class="list-group-item">운영시간 및 입장금액 안내</li>
-				  <li class="list-group-item">공지사항</li>
+		    	<br><br>
+				<a href='${ contextPath }/views/cs/FAQ.jsp' class='mainCateName' id='zooInfo'>고객 센터</a>
+		    	<ul class="subCategory">
+				  <li style='width: 150px;'><a href='${ contextPath }/views/cs/FAQ.jsp'>자주 묻는 Q&A</a></li>
+				  <li style='width: 120px;'><a href='#'>문의 게시판</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div >
 	<script>
 		$(() =>{
-			/* const mainCategorys = document.getElementsByClassName('mainCateName');
+			const mainCateNames = document.getElementsByClassName('mainCateName');
+			for(const mainCateName of mainCateNames){
+				const subCategory = mainCateName.nextElementSibling;
+				mainCateName.addEventListener('mouseenter', () =>{
+					subCategory.style.visibility = 'visible';
+				})
+				subCategory.addEventListener('mouseenter', () =>{
+					subCategory.style.visibility = 'visible';
+				})
+				mainCateName.addEventListener('mouseout', () =>{
+					subCategory.style.visibility = 'hidden';
+				})
+				
+			}
 			
-			for(const mainCategory of mainCategorys){
-				mainCategory.addEventListener('mouseover', function(){
-					console.log(this.nextElementSibling);
-					this.nextElementSibling.style.display = 'block';
-				});
-			} */
-			
-			$('.mainCateName').on({'mouseover': function(){
-				$(this).next().toggleClass('reverse');
-			},'mouseout': function(){
-				$(this).next().toggleClass('reverse');
-			}})
 		})
 	</script>
 </body>
