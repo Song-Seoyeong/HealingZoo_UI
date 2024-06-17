@@ -129,5 +129,19 @@
 	<!-- 푸터 -->
 	<%@ include file='../common/footer.jsp' %>
 	<!-- /푸터 -->
+	
+	<script>
+		window.onload = () =>{
+			const tds = document.querySelectorAll('td');
+			for(const td of tds){
+				const parent = td.parentElement;
+				td.addEventListener('click', ()=>{
+					const boardNo = parent.children[1].innerText;
+					location.href = '${contextPath}/views/common/boardDetail.jsp';
+					//?category=review
+				})
+			}
+		}
+	</script>
 </body>
 </html>
