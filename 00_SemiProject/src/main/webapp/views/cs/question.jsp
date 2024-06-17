@@ -7,6 +7,8 @@
 <style>
 	.margin{width: 100%; height: 70px;}
 	#searchIcon:hover{cursor: pointer;}
+	#community{font-weight: bold;}
+	#communitySub{visibility: visible;}
 </style>
 <title>Insert title here</title>
 </head>
@@ -129,5 +131,23 @@
 	<!-- 푸터 -->
 	<%@ include file='../common/footer.jsp' %>
 	<!-- /푸터 -->
+	
+	
+	
+	
+	<script>
+		window.onload = () =>{
+			const tds = document.querySelectorAll('td');
+			for(const td of tds){
+				const parent = td.parentElement;
+				
+				td.addEventListener('click', ()=>{
+					const boardNo = parent.children[1].innerText;
+					location.href = '${contextPath}/views/cs/csBoardDetail.jsp';
+					//?category=question
+				})
+			}
+		}
+	</script>
 </body>
 </html>
