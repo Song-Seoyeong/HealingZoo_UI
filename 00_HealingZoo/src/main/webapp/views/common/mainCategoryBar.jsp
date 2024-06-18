@@ -5,13 +5,45 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <style>
-	#mainCategoryBar{height: 150px; border-radius: 0px 0px 20px 20px; background: #65B741; margin: 0px;}
-	.mainCateName:hover{font-weight: bold;}
-	.mainCateName{font-size: 25px; color: white; text-decoration: none;}
-	.subCategory{background: white; border-radius: 20px; visibility: hidden; height: 40px; position: absolute;}
-	.subCategory li{margin: 10px; display: inline-block;}
-	.subCategory a{color: #65B741; font-size: 15px; text-decoration: none;}
-	.subCategory a:hover{font-weight: bold;}
+#mainCategoryBar {
+	height: 150px;
+	border-radius: 0px 0px 20px 20px;
+	background: #65B741;
+	margin: 0px;
+}
+
+.mainCateName:hover {
+	font-weight: bold;
+}
+
+.mainCateName {
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+}
+
+.subCategory {
+	background: white;
+	border-radius: 20px;
+	visibility: hidden;
+	height: 40px;
+	position: absolute;
+}
+
+.subCategory li {
+	margin: 10px;
+	display: inline-block;
+}
+
+.subCategory a {
+	color: #65B741;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.subCategory a:hover {
+	font-weight: bold;
+}
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
