@@ -51,6 +51,7 @@
 	    <div class="col">
 		</div>
 	</div>
+  
 	<div style='margin: 3%'></div>
 	<div class="row text-center" height='330px'>
 	    <div class="col"></div>
@@ -87,13 +88,6 @@
 
 
 	<ol>
-		<li>
-			<a href=''>동물소개</a>
-			<ul>
-				<li><a href='#'>가족 소개</a></li>
-				<li><a href='#'>마스코트</a></li>
-			</ul>
-		</li>
 		<li>
 			<a href='views/myPage/myinfo.jsp'>마이페이지</a>
 			<ul>

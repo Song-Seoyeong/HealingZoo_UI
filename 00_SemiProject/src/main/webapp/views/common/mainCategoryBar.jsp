@@ -61,9 +61,6 @@
 					  <li style='width: 120px;'><a href='${ contextPath }/views/cs/question.jsp'>문의 게시판</a></li>
 					</ul>
 				</div>
-			</div>
-		</div>
-	</div>
 	<script>
 		$(() =>{
 			const mainCateNames = document.getElementsByClassName('mainCateName');
@@ -76,10 +73,10 @@
 				subCategory.addEventListener('mouseover', function(){
 					subCategory.style.visibility = 'visible';
 				})
-				/* mainCateName.addEventListener('mouseout', () =>{
+				mainCateName.addEventListener('mouseout', () =>{
 					subCategory.style.visibility = 'hidden';
 					
-				}) */
+				})
 				subCategory.addEventListener('mouseout', function(){
 					subCategory.style.visibility = 'hidden';
 					
