@@ -66,7 +66,7 @@
 				  <div class="col-5">
 				  </div>
 				  <div class="col-2">
-				  	<button type="button" class="btn" style='background: #60A869; color: white;'>로그인</button>
+				  	<button type="button" id='loginButton' class="btn" style='background: #60A869; color: white;'>로그인</button>
 				  </div>
 				  <div class="col-5">
 				  </div>
@@ -82,5 +82,33 @@
 	<!-- 푸터 -->
 	<%@ include file='../common/footer.jsp' %>
 	<!-- /푸터 -->	
+	
+	<script>
+		window.onload = () =>{
+			
+			document.getElementById('loginButton').addEventListener('click', const doLogin = ()=>{
+				const id = document.getElementById('inputId');
+				const pwd = document.getElementById('inputPassward');
+				if(id.value.trim() == ''){
+					alert('아이디를 입력하세요.');
+					id.focus();
+				}else if(pwd.value.trim() == ''){
+					alert('비밀번호를 입력하세요.');
+					pwd.focus();
+				}else{
+					document.getElementById('loginForm').submit();
+				}
+			})
+			
+			const inputIdPwd = document.getElementsByTagName('input');
+			for(const input of inputIdPwd){
+				input.addEventListener('keyup', e =>{
+					if(e.key == 'Enter'){
+						doLogin();
+					}
+				})
+			}
+		}
+	</script>
 </body>
 </html>

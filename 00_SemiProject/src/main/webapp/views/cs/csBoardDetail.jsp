@@ -73,7 +73,7 @@
 		</div>
 		<div style='width: 100%; height: 30px;'></div>
 		
-		<!-- 문의 답변 폼 -->
+		<!-- 문의 답변 폼 : 답변이 있을 때만 노출-->
 		<div class="container text-center">
 			<div class="row">
 			    <div class="col"></div>

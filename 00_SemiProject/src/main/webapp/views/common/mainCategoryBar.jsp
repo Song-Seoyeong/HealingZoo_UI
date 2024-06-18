@@ -69,14 +69,18 @@
 			const mainCateNames = document.getElementsByClassName('mainCateName');
 			for(const mainCateName of mainCateNames){
 				const subCategory = mainCateName.nextElementSibling;
-				mainCateName.addEventListener('mouseenter', () =>{
+				mainCateName.addEventListener('mouseenter', function(){
 					subCategory.style.visibility = 'visible';
 					
 				})
-				subCategory.addEventListener('mouseenter', () =>{
-						subCategory.style.visibility = 'visible';
-					})
-				mainCateName.addEventListener('mouseout', () =>{
+				subCategory.addEventListener('mouseover', function(){
+					subCategory.style.visibility = 'visible';
+				})
+				/* mainCateName.addEventListener('mouseout', () =>{
+					subCategory.style.visibility = 'hidden';
+					
+				}) */
+				subCategory.addEventListener('mouseout', function(){
 					subCategory.style.visibility = 'hidden';
 					
 				})
