@@ -41,32 +41,26 @@
 					</div>
 					<br>
 					<div  class='text-center'>
-				    	<textArea name='inputBoardContent' name='content' cols='70' rows="20" style="resize: none;"  class='inputBoard'></textArea>
+				    	<textArea id='inputBoardContent' name='content' cols='70' rows="20" style="resize: none;"  class='inputBoard'></textArea>
 					</div>
 					<div class='text-start'>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type='password' name='boardPwd' class='inputBoard' placeholder='글 비밀번호를 입력해주세요' size='20'/>
 					</div>
 					<br>
+					<div>
+						 <input class="form-control" type="file" id="formFile" name='img'>
+					</div>
+					<div class="text-end">
+			    	<button id='insertBoard' class="btn" style='background: #60A869; color: white;'>완료</button>
+			    	&nbsp;&nbsp;&nbsp;	
+					<button type="button" class="btn" style='background: #DD5353; color: white;'>취소</button>
+				</div>
 			    </div>
 			    <div class="col"></div>
 			  </div>
 			</div>
 			<br>
-			<div class="container text-center">
-			  <div class="row">
-			  	<div class='col-3'></div>
-			    <div class="col-3 text-start">
-					  <input class="form-control" type="file" id="formFile" name='img'>
-			    </div>
-			    <div class="col-3 text-end">
-			    	<button id='insertBoard' class="btn" style='background: #60A869; color: white;'>완료</button>
-			    	&nbsp;&nbsp;&nbsp;	
-					<button type="button" class="btn" style='background: #DD5353; color: white;'>취소</button>
-				</div>
-			    <div class="col-3"></div>
-			  </div>
-			</div>
 		</form>
 			
 		<div class='margin'></div>
