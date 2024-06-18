@@ -6,22 +6,12 @@
 <%@ taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
 <meta charset="UTF-8">
 <style>
-@font-face {
-    font-family: 'NanumSquareRound';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .search {
 	position: relative;
 	width: 300px;
-	display: inline-block;
-	float: right;
-	margin-bottom: 30px;
 }
 
-input {
+#searchText {
 	width: 100%;
 	border: 1px solid #bbb;
 	border-radius: 8px;
@@ -64,11 +54,13 @@ input {
 	padding: 10px;
 }
 
-
-tr {
-	text-align: center;
+.complete {
+	color: #65B741;
 }
 
+.Incomplete {
+	color: #EA862A;
+}
 </style>
 <title>Insert title here</title>
 </head>
@@ -80,147 +72,145 @@ tr {
 	<ul class="nav flex-column"
 		style="float: left; margin-top: 100px; margin-left: 50px;">
 		<li class="nav-item">
-			<h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
-		</li>
-		<li class="nav-item"><a class="nav-link active"
-			href="${ contextPath }/views/adminPage/notice.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-wieght: bold;">공지사항</a>
+			<h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자
+				페이지</h2>
 		</li>
 		<li class="nav-item"><a class="nav-link"
-			href="${ contextPath }/views/adminPage/inquiry.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: black;">문의사항</a></li>
+			href="${ contextPath }/views/adminPage/notice.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: black; font-wieght: bold;">공지사항</a>
+		</li>
+		<li class="nav-item"><a class="nav-link active"
+			aria-current="page" href="${ contextPath }/views/adminPage/inquiry.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #65B741;">문의사항</a></li>
 		<li class="nav-item"><a class="nav-link" href="#"
 			style="border-bottom: 1px solid #B9B9B9; color: black;">후기 리스트</a></li>
 		<li class="nav-item"><a class="nav-link" href="#"
 			style="border-bottom: 1px solid #B9B9B9; color: black;">예약 리스트</a></li>
 		<li class="nav-item"><a class="nav-link" href="#"
-			style="border-bottom: 1px solid #B9B9B9; color: black;">자주 묻는 Q&A</a></li>
+			style="border-bottom: 1px solid #B9B9B9; color: black;">자주 묻는 Q&A</a>
+		</li>
 		<li class="nav-item"><a class="nav-link" href="#"
 			style="border-bottom: 1px solid #B9B9B9; color: black;">회원 관리</a></li>
 		<li class="nav-item"><a class="nav-link" href="#"
 			style="border-bottom: 1px solid #B9B9B9; color: black;">사이트 관리</a></li>
+
 	</ul>
 
 
 	<!-- 글 목록 -->
 	<div class="container" style="width: 900px; margin-top: 100px;">
-		<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">공지사항</h2>
-		<table class="table">
+		<h2
+			style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">문의사항</h2>
+
+		<table class="table text-center">
 			<thead>
 				<tr>
-					<th scope="col" style="width: 3%"></th>
-					<th scope="col" style="width: 10%;">글 번호</th>
-					<th scope="col" style="width: 130px; ">
-						<select aria-label="말머리 선택" 
-								style="border-style: none; text-align: center; background-color: #fff;
-								font-family: 'NanumSquareRound';">
-							<option selected>말머리</option>
-							<option value="1">새소식</option>
-							<option value="2">공지사항</option>
-							<option value="3">이벤트</option>
-						</select>
-					</th>
+					<th scope="col" style="width: 3%;"></th>
+					<th scope="col">글 번호</th>
 					<th scope="col">글 제목</th>
 					<th scope="col">작성자</th>
-					<th scope="col" style="width:100px;">작성일</th>
+					<th scope="col">작성일</th>
+					<th scope="col">진행상태</th>
 				</tr>
 			</thead>
 			<tbody class="table-group-divider">
-				<tr> 
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<tr>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">1</td>
-					<td>공지사항</td>
-					<td>힐링 동물원 공지사항</td>
+					<td>[공지사항] 힐링 동물원 공지사항</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #65B741;">완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">2</td>
-					<td>이벤트</td>
-					<td>여름철 특별 이벤트</td>
+					<td>[이벤트]여름철 특별 이벤트</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #EA862A;">미완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">3</td>
-					<td>새소식</td>
-					<td>새로운 아기 판다 탄생</td>
+					<td>[새소식] 새로운 아기 판다 탄생</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #EA862A;">미완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">4</td>
-					<td>공지사항</td>
-					<td>운영 시간 변경 안내</td>
+					<td>[공지사항] 운영 시간 변경 안내</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #EA862A;">미완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">5</td>
-					<td>공지사항</td>
-					<td>시설 안내</td>
+					<td>[공지사항] 시설 안내</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #EA862A;">미완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">6</td>
-					<td>이벤트</td>
-					<td>아기 판다 이름 공모전</td>
+					<td>[이벤트] 아기 판다 이름 공모전</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #EA862A;">미완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">7</td>
-					<td>이벤트</td>
-					<td>여름 방학 어린이 캠프</td>
+					<td>Mark</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #EA862A;">미완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">8</td>
-					<td>공지사항</td>
-					<td>건강 및 안전 수칙</td>
+					<td>Mark</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #EA862A;">미완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">9</td>
-					<td>새소식</td>
-					<td>신규 전시관 오픈</td>
+					<td>Mark</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #65B741;">완료</td>
 				</tr>
 				<tr>
-					<td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+					<td><input class="form-check-input" type="checkbox" value=""
+						id="flexCheckDefault"></td>
 					<td scope="row">10</td>
-					<td>공지사항</td>
-					<td>봉사활동 프로그램 모집</td>
+					<td>Mark</td>
 					<td>관리자</td>
-					<td>2024.06.18</td>
+					<td>2024.06.06</td>
+					<td style="color: #65B741;">완료</td>
 				</tr>
 			</tbody>
 		</table>
-		<!-- 글 목록 -->
 
-
-		<!-- 버튼 -->
 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-			<a class="btn btn-primary" id="write_button" href="${contextPath}/views/adminPage/noticeBoardWrite.jsp" role="button">글쓰기</a>
+			<button class="btn btn-primary" type="button" id="write_button">글쓰기</button>
 			<button class="btn btn-primary" type="button" id="delete_button">삭제</button>
 		</div>
-		<!-- 버튼 -->
-
-
-
-		<!-- 페이지네이션 -->
 		<div class="container">
 			<div class="pagination-container" style="margin-bottom: 20px;">
 				<div class="prev-button" style="padding: 10px;">&lt;</div>
@@ -242,15 +232,13 @@ tr {
 				<div class="next-button" style="padding: 10px;">&gt;</div>
 			</div>
 		</div>
-		<!-- 페이지네이션 -->
-
 
 
 		<!-- 검색 -->
 		<div class="row justify-content-center" style="margin-bottom: 100px;">
 			<div class="col-4">
 				<select class="form-select" aria-label="Default select example"
-					style="display: inline-block; float: right; width: 200px; margin-right: 20px; border: 1px solid #bbb; padding: 10px 12px;">
+					style="display: inline-block; float: right; width: 200px;">
 					<option selected>----</option>
 					<option value="1">작성자</option>
 					<option value="2">제목</option>
@@ -259,22 +247,15 @@ tr {
 			</div>
 			<div class="col-4">
 				<div class="search">
-					<input type="text" placeholder="검색어 입력"> <img
-						src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
-						id="search">
+					<input id="searchText" type="text" placeholder="검색어 입력"> 
+					<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" id="search">
 				</div>
 			</div>
 		</div>
-		<!-- 검색 -->
-
-
 	</div>
-	<!-- 하단 푸터 -->
-	<%@ include file='../common/footer.jsp'%>
-	<!-- 하단 푸터 -->
-	
-	
-	
+	<!-- 검색 -->
+
+
 	<!-- 한 행 모두 클릭 가능하게 -->
 	<script>
 		window.onload = () =>{
@@ -283,12 +264,16 @@ tr {
 				const parent = td.parentElement;
 				td.addEventListener('click', ()=>{
 					const boardNo = parent.children[1].innerText;
-					location.href = '${contextPath}/views/common/BoardDetail.jsp';
-					//?category=book
+					location.href = '${contextPath}/views/adminPage/noticeBoardDetail.jsp';
 				})
 			}
 		}
 	</script>
 	<!-- 한 행 모두 클릭 가능하게 -->
+
+
+	<!-- 하단 푸터 -->
+	<%@ include file='../common/footer.jsp'%>
+	<!-- 하단 푸터 -->
 </body>
 </html>
