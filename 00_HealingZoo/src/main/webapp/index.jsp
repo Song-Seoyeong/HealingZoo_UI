@@ -100,8 +100,8 @@
 				<li><a href='views/adminPage/notice.jsp'>공지사항</a></li>
 				<li><a href='#'>문의리스트</a></li>
 				<li><a href='#'>후기리스트</a></li>
-				<li><a href='views/adminPage/bookAdmin.jsp'>예약리스트</a></li>
-				<li><a href='views/adminPage/FAQAdmin.jsp'>자주 묻는 Q&A</a></li>
+				<li><a href='#'>예약리스트</a></li>
+				<li><a href='#'>자주 묻는 Q&A</a></li>
 				<li><a href='#'>회원관리</a></li>
 				<li><a href='#'>사이트관리</a></li>
 				<li>
