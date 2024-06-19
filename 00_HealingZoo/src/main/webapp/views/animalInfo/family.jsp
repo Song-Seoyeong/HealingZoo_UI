@@ -103,7 +103,7 @@
 						</div>
 					</div>
 					<div class="animal-card">
-						<img src="${ contextPath }/image2/더블 담비.jpg" alt="담비">
+						<img src="#" alt="담비">
 						<div class="content">
 							<h2 class="title">담비</h2>
 							<p class="description">분류: 식육목 족제비과</p>
@@ -113,7 +113,7 @@
 						</div>
 					</div>
 					<div class="animal-card">
-						<img src="${ contextPath }/image2/바윗여우.jpg" alt="붉은 여우">
+						<img src="#" alt="붉은 여우">
 						<div class="content">
 							<h2 class="title">붉은 여우</h2>
 							<p class="description">분류: 개과</p>
@@ -123,7 +123,7 @@
 						</div>
 					</div>
 					<div class="animal-card">
-						<img src="${ contextPath }/image2/라쿤.jpg" alt="라쿤">
+						<img src="#" alt="라쿤">
 						<div class="content">
 							<h2 class="title">라쿤</h2>
 							<p class="description">분류: 식육목 너구리과</p>
@@ -133,7 +133,7 @@
 						</div>
 					</div>
 					<div class="animal-card">
-						<img src="${ contextPath }/image2/나무등반다람쥐.jpg" alt="하늘다람쥐">
+						<img src="#" alt="하늘다람쥐">
 						<div class="content">
 							<h2 class="title">하늘다람쥐</h2>
 							<p class="description">분류: 설치류</p>
@@ -145,7 +145,7 @@
 				</section>
 				<section id="조류">
 					<div class="animal-card">
-						<img src="${ contextPath }/image2/수리부엉이.jpg" alt="수리부엉이">
+						<img src="#" alt="수리부엉이">
 						<div class="content">
 							<h2 class="title">수리부엉이</h2>
 							<p class="description">분류: 올빼미과 맹금류</p>
@@ -155,7 +155,7 @@
 						</div>
 					</div>
 					<div class="animal-card">
-						<img src="${ contextPath }/image2/밑앵무.jpg" alt="푸른목금강앵무">
+						<img src="#" alt="푸른목금강앵무">
 						<div class="content">
 							<h2 class="title">푸른목금강앵무</h2>
 							<p class="description">분류: 금강앵무속</p>
@@ -165,7 +165,7 @@
 						</div>
 					</div>
 					<div class="animal-card">
-						<img src="${ contextPath }/image2/둥지딱새.jpg" alt="긴꼬리딱새">
+						<img src="#" alt="긴꼬리딱새">
 						<div class="content">
 							<h2 class="title">긴꼬리딱새</h2>
 							<p class="description">분류: 긴꼬리딱새속</p>

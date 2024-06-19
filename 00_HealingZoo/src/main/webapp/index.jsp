@@ -104,16 +104,7 @@
 				<li><a href='#'>자주 묻는 Q&A</a></li>
 				<li><a href='#'>회원관리</a></li>
 				<li>
-			<a href='views/adminPage/notice.jsp'>관리자페이지</a>
-			<ul>
-				<li><a href='views/adminPage/notice.jsp'>공지사항</a></li>
-				<li><a href='#'>문의리스트</a></li>
-				<li><a href='#'>후기리스트</a></li>
-				<li><a href='#'>예약리스트</a></li>
-				<li><a href='#'>자주 묻는 Q&A</a></li>
-				<li><a href='#'>회원관리</a></li>
-				<li><a href='#'>사이트관리</a></li>
-				<li>
+					<a href='views/adminPage/notice.jsp'>사이트 관리</a>
 					<ul>
 						<li><a href='#'>메인페이지</a></li>
 						<li><a href='#'>오시는 길</a></li>
