@@ -91,27 +91,28 @@
 			<a href='views/myPage/myinfo.jsp'>마이페이지</a>
 			<ul>
 				<li><a href='views/myPage/myinfo.jsp'>내 정보 수정</a></li>
-				<li><a href='views/myPage/mylist.jsp'>내 게시글 보기</a></li>
+				<li><a href='views/myPage/myBoardList.jsp'>내 게시글 보기</a></li>
+				<li><a href='views/myPage/myCommentList.jsp'>내 댓글 보기</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href='views/adminPage/notice.jsp'>관리자페이지</a>
+			<a href='views/adminPage/noticeAdmin.jsp'>관리자페이지</a>
 			<ul>
-				<li><a href='views/adminPage/notice.jsp'>공지사항</a></li>
-				<li><a href='#'>문의리스트</a></li>
-				<li><a href='#'>후기리스트</a></li>
-				<li><a href='#'>예약리스트</a></li>
-				<li><a href='#'>자주 묻는 Q&A</a></li>
-				<li><a href='#'>회원관리</a></li>
+				<li><a href='views/adminPage/noticeAdmin.jsp'>공지사항</a></li>
+				<li><a href='views/adminPage/inquiryAdmin.jsp'>문의리스트</a></li>
+				<li><a href='views/adminPage/reviewAdmin.jsp'>후기리스트</a></li>
+				<li><a href='views/adminPage/bookAdmin.jsp'>예약리스트</a></li>
+				<li><a href='views/adminPage/FAQAdmin.jsp'>자주 묻는 Q&A</a></li>
+				<li><a href='views/adminPage/memberAdmin.jsp'>회원관리</a></li>
 				<li>
-					<a href='views/adminPage/notice.jsp'>사이트 관리</a>
+					<a href='views/adminPage/mainPageAdmin.jsp'>사이트 관리</a>
 					<ul>
-						<li><a href='#'>메인페이지</a></li>
-						<li><a href='#'>오시는 길</a></li>
-						<li><a href='#'>프로그램안내</a></li>
-						<li><a href='#'>운영시간/이용요금</a></li>
-						<li><a href='#'>동물 리스트</a></li>
-						<li><a href='#'>마스코트</a></li>
+						<li><a href='views/adminPage/siteAdmin/mainPageAdmin.jsp'>메인페이지</a></li>
+						<li><a href='views/adminPage/siteAdmin/wayAdmin.jsp'>오시는 길</a></li>
+						<li><a href='views/adminPage/siteAdmin/showAdmin.jsp'>프로그램안내</a></li>
+						<li><a href='views/adminPage/siteAdmin/operatingAdmin.jsp'>운영시간/이용요금</a></li>
+						<li><a href='views/adminPage/siteAdmin/animalAdmin.jsp'>동물 리스트</a></li>
+						<li><a href='views/adminPage/siteAdmin/mascotAdmin.jsp'>마스코트</a></li>
 					</ul>
 				</li>
 			</ul>
