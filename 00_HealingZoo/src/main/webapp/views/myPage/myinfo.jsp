@@ -3,67 +3,130 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@ taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core" %>
 <meta charset="UTF-8">
+<style>
+	.search {
+	  position: relative;
+	  width: 300px;
+	  display: inline-block;
+	  float: right;
+	  margin-bottom: 30px;
+	}
+	
+	input {
+	  width: 100%;
+	  border: 1px solid #bbb;
+	  border-radius: 8px;
+	  padding: 10px 12px;
+	  font-size: 14px;
+	}
+	
+	#search {
+	  position : absolute;
+	  width: 17px;
+	  top: 14px;
+	  right: 12px;
+	  margin: 0;
+	}
+	
+	.form-check-input{
+		transform : scale(0.5);
+		accent-color: #65B741;
+	}
+	
+	
+	#delete_button{ background-color: #DD5353; width: 80px; border: none;}
+	#write_button{ background-color: #65B741; width: 80px; border: none; margin-right: 5px;}
+	
+	.pagination-container {
+	  display: flex;
+	  justify-content: center;
+	}
+	
+	.number-button-wrapper {
+		padding: 10px;
+	}
+	
+	
+	
+</style>
 <title>Insert title here</title>
 </head>
-<!-- style="background :#8080e0" 페리윙클블루 -->
-<!-- style="background :#14A492" 청록색-->
-<style>
-	.container-fluid{width:100%; height:100px}
-</style>
 <body>
-	<%@ include file='../common/logoBar.jsp' %>
+	<%@ include file='../common/logoBarM.jsp' %>
 	<%@ include file='../common/mainCategoryBar.jsp' %>
 	
-	<div style='margin: 7%;'></div>
-	<div class="container">
-		<!-- list -->
-		<div id="list" style="width:15%; float:left"  >
-			<h2>마이페이지</h2>
-		   	<hr style="border:0; height:3px; background:#65b741"/>
-		   	<ul style='list-style-type: none;'>
-		   		<li>
-		   			<a href="${ contextPath }/views/myPage/myinfo.jsp" style="text-decoration:none; color:black;">내 정보 수정</a>
-		   			<hr>
-		   		</li>
-		   		<li>
-		   			<a href="${ contextPath }/views/myPage/mylist.jsp" style="text-decoration:none; color:black;">내 게시글 보기</a>
-		   		</li>
-		   	</ul>
-		</div>
-		<div style="width:800px; float:right" >
-			<h3><img src="${ contextPath }/image/sidebar.svg" style="height:50px"></img>내 정보 수정</h3>
+	<!-- 사이드바 -->
+	<ul class="nav flex-column" style="float: left; margin-top: 100px; margin-left: 50px;">
+	  <li class="nav-item">
+	    <h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">마이 페이지</h2>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link " href="${ contextPath }/views/myPage/myinfo.jsp" style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-wieght: bold; ">내 정보 보기</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/myPage/myBoardList.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">내 게시글 보기</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/myPage/myCommentList.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">내 답변 보기</a>
+	  </li>
+	</ul>
+	
+	
+	<!-- 글 목록 -->
+	<div class="container" style="width: 900px; margin-top: 100px;  ">
+		 <h3 ><img src="${ contextPath }/image/sidebar.svg" style="height:50px"></img>내 정보 수정</h3>
 			<hr style="border:0; height:5px; background:black"/>
 			<form>
-				<div class="mb-3">
-					<label >아이디 </label>
-					<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-				</div>
+				<label>아이디</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="아이디고정" name="id" style="width:500px">
 				<hr>
-				<div class="mb-3">
-					<label >비밀번호</label>
-					<input type="password" class="form-control" id="exampleInputPassword1">
-				</div>
+				<label>비밀번호</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="비밀번호" name="pwd" style="width:500px">
 				<hr>
-				<div class="mb-3">
-					<label >비밀번호확인</label>
-					<input type="password" class="form-control" id="exampleInputPassword1">
-				</div>
+				<label>비밀번호 확인</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="비밀번호확인" name="pwdCheck" style="width:500px">
 				<hr>
-				<div class="mb-3">
-					<label >전화번호</label>
-					<input type="text" class="form-control" id="exampleInputPassword1">
-				</div>
+				<label>휴대폰 번호</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phoneNo" placeholder="(-제외)" style="width:500px">
 				<hr>
 				<div style="text-align:center;">
-					<button type="submit" style="background-color:#65B741; ">수정하기</button>
-					<button type="submit" style="background-color:#DD5353; " >탈퇴하기</button>
+					<button class="btn btn-primary" type="submit" id="write-button" style="background-color:orange; border:none; ">수정하기</button>
+					<button class="btn btn-primary" type="button" id="delete_button">탈퇴</button>
 				</div>
-			</form>			
-		</div>	   
-	  </div>
-	<br clear='all'>
-	<div style='margin: 7%;'></div>
+			</form>		
+	</div>
+	
+	<div style="margin-bottom: 100px"></div>
+	
 	<%@ include file='../common/footer.jsp' %>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
