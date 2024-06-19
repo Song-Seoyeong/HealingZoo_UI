@@ -9,13 +9,6 @@
 	height: 70px;
 }
 
-#cs {
-	font-weight: bold;
-}
-
-#csSub {
-	visibility: visible;
-}
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>

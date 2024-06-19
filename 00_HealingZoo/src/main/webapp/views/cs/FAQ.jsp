@@ -17,10 +17,11 @@
 	<div class='margin'></div>
 	
 	<div class="row">
-	    <div class="col">
-	    </div>
+	    <div class="col"></div>
 	    <div class="col-7">
 	    	 <h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">자주 묻는 Q&A</h2>
+	    	 
+	    	 <!-- 아코디언 -->
 			<div class="accordion" id="accordionExample">
 			  <div class="accordion-item">
 			    <h2 class="accordion-header">
@@ -50,7 +51,7 @@
 			  </div>
 			  <div class="accordion-item">
 			    <h2 class="accordion-header">
-			      <button class="accordion-button collapsed" type="button" style="background: white; border: 2px solid #60A869;" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			      <button class="accordion-button collapsed" type="button" style="background: white; border: 2px solid #60A869;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 			        <strong>Q. 장애인 편의시설이 구비되어있나요?</strong>
 			      </button>
 			    </h2>
@@ -63,10 +64,16 @@
 			  </div>
 			</div>
 	    </div>
-	    <div class="col">
-	    </div>
-	  </div>
+	    <div class="col"></div>
+	</div>
 	<div class='margin'></div>
+	
+	<script>
+	const bsCollapse = new bootstrap.Collapse('.collapse', {
+		show: false
+		})
+	</script>	
+	
 		
 	<!-- 푸터 -->
 	<%@ include file='../common/footer.jsp' %>

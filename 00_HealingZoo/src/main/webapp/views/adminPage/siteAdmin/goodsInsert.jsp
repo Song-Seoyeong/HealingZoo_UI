@@ -8,7 +8,7 @@
 		font-size: 23px;
 		white-space: nowrap;
 	}
-	#showContent{
+	#goodsContent{
 		resize: none;
 		border: 1px solid #D9D9D9;
 		border-radius: 10px;
@@ -18,7 +18,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<!--  프로그램 안내 관리 페이지 -->
+	<!-- ~~상품 추가 페이지~~ -->
+	
 	<%@ include file='../../common/logoBarM.jsp'%>
 	<%@ include file='../../common/mainCategoryBar.jsp'%>
 
@@ -26,7 +27,6 @@
    <ul class="nav flex-column" style="float: left; margin-top: 100px; margin-left: 50px;">
      <li class="nav-item">
        <h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
-     </li>
      <li class="nav-item">
        <a class="nav-link active" href="${ contextPath }/views/adminPage/noticeAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black; ">공지사항</a>
      </li>
@@ -61,69 +61,70 @@
    </ul>
    <!-------------->
 	
-	<!-- input 영역 -->
+	<!-- 상품 상세/수정/추가 폼 -->
 	<div class="container" style="width: 900px; margin-top: 100px; margin-bottom: 100px;">
 		<div  style='margin-bottom: 100px;'>
-			<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 30px;">프로그램 안내</h2>
-			
-			<!-- 프로그램명 -->
-			<div class='row'>
+			<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 30px;">상품 관리</h2>
+			<div class='row' style='margin-bottom:30px;'>
 				<div class='col-1'></div>
+
+				<!-- 상품 명 -->
 				<div class='col-2'>
-					<p class='inputTitleName'>프로그램명 : </p>
+					<p class='inputTitleName'>상품 명 : </p>
 				</div>
 				<div class='col-7 text-center'>
-					<input class="form-control" type="text" id="showName" name='showName'>
+				
+					<input class="form-control" type="text" id="goodsName" name='goodsName'>
 				</div>
-				<div class='col-2'></div>
+				<div class='col-1'></div>
 			</div>
 			
-			<!-- 프로그램 설명 -->
 			<div class='row' style='margin-bottom:30px;'>
 				<div class='col-1'></div>
 				<div class='col-2'>
-					<p class='inputTitleName'>프로그램 설명 : </p>
+					<p class='inputTitleName'>상품 가격 : </p>
 				</div>
 				<div class='col-7 text-center'>
-					<textArea cols='48' rows='4' id='showContent' name='showContent'></textArea>
+				
+					<input class="form-control" type="text" id="goodsPrice" name='goodsPrice'>
 				</div>
-				<div class='col-2'></div>
+				<div class='col-1'></div>
 			</div>
 			
-			<!-- 사진 -->
 			<div class='row' style='margin-bottom:30px;'>
 				<div class='col-1'></div>
 				<div class='col-2'>
-					<p class='inputTitleName'>프로그램 사진 : </p>
+					<p class='inputTitleName'>상품 설명 : </p>
 				</div>
 				<div class='col-7 text-center'>
-					<input class="form-control" type="file" id="'showImg1'" name='showImg1' accept='image/*'>
+					<textArea cols='48' rows='4' id='goodsContent' name='goodsContent'></textArea>
 				</div>
-				<div class='col-2'></div>
+				<div class='col-1'></div>
 			</div>
+			
 			<div class='row' style='margin-bottom:30px;'>
 				<div class='col-1'></div>
 				<div class='col-2'>
-					<p class='inputTitleName' style='font-size:20px;'>마우스 오버 사진 : </p>
+					<p class='inputTitleName'>사진 : </p>
 				</div>
 				<div class='col-7 text-center'>
-					<input class="form-control" type="file" id="'showImg2" name='showImg2' accept='image/*'>
+					<input class="form-control" type="file" id="goodsImg" name='goodsImg' accept='image/*'>
 				</div>
-				<div class='col-2'></div>
+				<div class='col-1'></div>
 			</div>
 			<br><br>
 			
-			
-			
 			<!-- 버튼 -->
 			<div class='text-end'>
-				<button id='insert' class="btn" style='background: #60A869; color: white;'>추가</button>
+				<button id='inserGoods' class="btn" style='background: #60A869; color: white;'>추가</button>
 		    	&nbsp;&nbsp;&nbsp;
-				<button id='update' class="btn" style='background: #EA862A; color: white;'>수정</button>
+				<button id='updateGoods' class="btn" style='background: #EA862A; color: white;'>수정</button>
 		    	&nbsp;&nbsp;&nbsp;
-				<button id='delete' type="button" class="btn" style='background: #DD5353; color: white;'>삭제</button>
+				<button id='deleteGoods' type="button" class="btn" style='background: #DD5353; color: white;'>삭제</button>
 			</div>
 		</div>
+		
+		
 	</div>
 	
 	<!-- 하단 푸터 -->

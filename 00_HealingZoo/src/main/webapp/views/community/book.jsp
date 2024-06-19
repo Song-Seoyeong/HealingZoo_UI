@@ -43,6 +43,34 @@
 			    </tr>
 			  </thead>
 			  <tbody class='table-group-divider'>
+			  	<tr>
+			      <td scope="row">10</td>
+			      <td>문의합니다</td>
+			      <td>홍*동</td>
+			      <td>24/06/15</td>
+			      <td style='color: red;'>미답변</td>
+			    </tr>
+			  	<tr>
+			      <td scope="row">9</td>
+			      <td>문의합니다</td>
+			      <td>홍*동</td>
+			      <td>24/06/15</td>
+			      <td style='color: red;'>미답변</td>
+			    </tr>
+			  	<tr>
+			      <td scope="row">8</td>
+			      <td>문의합니다</td>
+			      <td>홍*동</td>
+			      <td>24/06/15</td>
+			      <td style='color: red;'>미답변</td>
+			    </tr>
+			  	<tr>
+			      <td scope="row">7</td>
+			      <td>문의합니다</td>
+			      <td>홍*동</td>
+			      <td>24/06/15</td>
+			      <td style='color: red;'>미답변</td>
+			    </tr>
 			    <tr>
 			      <td scope="row">6</td>
 			      <td>문의합니다</td>
