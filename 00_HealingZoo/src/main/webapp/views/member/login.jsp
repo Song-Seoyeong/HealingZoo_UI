@@ -35,7 +35,7 @@
 	<div style='margin: 5%'></div>
 	
 	<!-- 로그인폼 -->
-	<form>
+	<form action='#' method='post'>
 		<div class="container-fluid">
 		  <div class="row">
 		    <div class="col"></div>
@@ -45,7 +45,7 @@
 				    <label for="inputId" class="form-label loginName">아이디</label>
 				  </div>
 				  <div class="col-7">
-				    <input type="text" class="form-control-lg" id="inputId" name='id' placeholder="아이디를 입력하세요" size='30'>
+				    <input type="text" class="form-control-lg" id="id" name='id' placeholder="아이디를 입력하세요" size='30' required>
 				  </div>
 				  <div class="col-auto">
 				  </div>
@@ -56,12 +56,14 @@
 				    <label for="inputPassword" class="form-label loginName">비밀번호</label>
 				  </div>
 				  <div class="col-7">
-				    <input type="password" id="inputPassword" class="form-control-lg" name='pwd' aria-describedby="passwordHelpInline" placeholder="비밀번호를 입력하세요" size='30'>
+				    <input type="password" id="pwd" class="form-control-lg" name='pwd' aria-describedby="passwordHelpInline" placeholder="비밀번호를 입력하세요" size='30' required>
 				  </div>
 				  <div class="col-auto">
 				  </div>
 				</div>
 				<div style='margin: 6%'></div>
+				
+				
 				<div class="row g-3 align-items-center">
 				  <div class="col-5">
 				  </div>
@@ -69,6 +71,7 @@
 				  	<button type="button" id='loginButton' class="btn" style='background: #60A869; color: white;'>로그인</button>
 				  </div>
 				  <div class="col-5">
+				  	<a href='${contextPath}/views/common/errorPage.jsp'>임의 에러 페이지</a>
 				  </div>
 				</div>
 		    </div>
@@ -87,8 +90,8 @@
 		window.onload = () =>{
 			
 			document.getElementById('loginButton').addEventListener('click', const doLogin = ()=>{
-				const id = document.getElementById('inputId');
-				const pwd = document.getElementById('inputPassward');
+				const id = document.getElementById('id');
+				const pwd = document.getElementById('pwd');
 				if(id.value.trim() == ''){
 					alert('아이디를 입력하세요.');
 					id.focus();
