@@ -57,7 +57,7 @@
 		    	<div class="subCategory" id='zooInfoSub'>
 			    	<ul>
 					  <li><a href='${ contextPath }/views/zooInfo/greeting.jsp'>인사말</a></li>
-					  <li><a href='#'>오시는 길</a></li>
+					  <li><a href='${ contextPath }/views/zooInfo/way.jsp'>오시는 길</a></li>
 					  <li><a href='${ contextPath }/views/zooInfo/programInfo.jsp'>프로그램 안내</a></li>
 					  <li><a href='${ contextPath }/views/zooInfo/operating.jsp'>운영시간 및 입장금액 안내</a></li>
 					  <li style='width: 80px;'><a href='${ contextPath }/views/zooInfo/notice.jsp'>공지사항</a></li>
