@@ -103,9 +103,30 @@
 				<li><a href='#'>예약리스트</a></li>
 				<li><a href='#'>자주 묻는 Q&A</a></li>
 				<li><a href='#'>회원관리</a></li>
+				<li>
+			<a href='views/adminPage/notice.jsp'>관리자페이지</a>
+			<ul>
+				<li><a href='views/adminPage/notice.jsp'>공지사항</a></li>
+				<li><a href='#'>문의리스트</a></li>
+				<li><a href='#'>후기리스트</a></li>
+				<li><a href='#'>예약리스트</a></li>
+				<li><a href='#'>자주 묻는 Q&A</a></li>
+				<li><a href='#'>회원관리</a></li>
+				<li><a href='#'>사이트관리</a></li>
+				<li>
+					<ul>
+						<li><a href='#'>메인페이지</a></li>
+						<li><a href='#'>오시는 길</a></li>
+						<li><a href='#'>프로그램안내</a></li>
+						<li><a href='#'>운영시간/이용요금</a></li>
+						<li><a href='#'>동물 리스트</a></li>
+						<li><a href='#'>마스코트</a></li>
+					</ul>
+				</li>
 			</ul>
 		</li>
 	</ol>
+
 	
 	<%@ include file='views/common/footer.jsp' %>
 </body>
