@@ -77,24 +77,23 @@ tr {
 	<%@ include file='../common/mainCategoryBar.jsp'%>
 
 	<!-- 사이드바 -->
+	<!-- 사이드바 -->
 	<ul class="nav flex-column"
 		style="float: left; margin-top: 100px; margin-left: 50px;">
 		<li class="nav-item">
 			<h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
 		</li>
-		<li class="nav-item"><a class="nav-link active"
-			href="${ contextPath }/views/adminPage/noticeAdmin.jsp"
+		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/noticeAdmin.jsp"
 			style="border-bottom: 1px solid #B9B9B9; color: #000; font-wieght: bold;">공지사항</a>
 		</li>
-		<li class="nav-item"><a class="nav-link"
-			href="${ contextPath }/views/adminPage/inquiryAdmin.jsp"
+		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/inquiryAdmin.jsp"
 			style="border-bottom: 1px solid #B9B9B9; color: #000;">문의사항</a>
 		</li>
-		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/reviewAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #000;">후기 리스트</a>
+		<li class="nav-item"><a class="nav-link active" href="${ contextPath }/views/adminPage/reviewAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #65B741;">후기 리스트</a>
 		</li>
-		<li class="nav-item"><a class="nav-link active" href="${ contextPath }/views/adminPage/bookAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #65B741;">예약 리스트</a>
+		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/bookAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #000;">예약 리스트</a>
 		</li>
 		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/FAQAdmin.jsp"
 			style="border-bottom: 1px solid #B9B9B9; color: #000;">자주 묻는 Q&A</a>
@@ -108,9 +107,10 @@ tr {
 	</ul>
 
 
+
 	<!-- 글 목록 -->
 	<div class="container" style="width: 900px; margin-top: 100px;">
-		<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">예약 리스트</h2>
+		<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">후기 리스트</h2>
 		<table class="table">
 			<thead>
 				<tr>
@@ -119,7 +119,7 @@ tr {
 					<th scope="col" style="width: 50%;">글 제목</th>
 					<th scope="col" style="width: 10%">작성자</th>
 					<th scope="col" style="width: 10%;">작성일</th>
-					<th scope="col" style="width: 12%">진행상태</th>
+					<th scope="col" style="width: 8%">조회수</th>
 				</tr>
 			</thead>
 			<tbody class="table-group-divider">

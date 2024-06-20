@@ -37,27 +37,34 @@
 	
 		<!-- 사이드바 -->
 		<div id="sideBar">
-			<ul class="nav flex-column" style="float: left; margin-top: 50px; margin-left: 40px; background-color: white; padding: 1%; border-radius: 10px;">
+			<ul class="nav flex-column"
+				style="float: left; margin-top: 100px; margin-left: 50px; background: white; padding: 1.5%; border-radius: 10px;"">
 				<li class="nav-item">
 					<h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
 				</li>
 				<li class="nav-item"><a class="nav-link active"
-					href="${ contextPath }/views/adminPage/notice.jsp"
+					href="${ contextPath }/views/adminPage/noticeAdmin.jsp"
 					style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-wieght: bold;">공지사항</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="${ contextPath }/views/adminPage/inquiry.jsp"
-					style="border-bottom: 1px solid #B9B9B9; color: black;">문의사항</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
-					style="border-bottom: 1px solid #B9B9B9; color: black;">후기 리스트</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
-					style="border-bottom: 1px solid #B9B9B9; color: black;">예약 리스트</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
-					style="border-bottom: 1px solid #B9B9B9; color: black;">자주 묻는 Q&A</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
-					style="border-bottom: 1px solid #B9B9B9; color: black;">회원 관리</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
-					style="border-bottom: 1px solid #B9B9B9; color: black;">사이트 관리</a></li>
+					href="${ contextPath }/views/adminPage/inquiryAdmin.jsp"
+					style="border-bottom: 1px solid #B9B9B9; color: #000;">문의사항</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/reviewAdmin.jsp"
+					style="border-bottom: 1px solid #B9B9B9; color: #000;">후기 리스트</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/bookAdmin.jsp"
+					style="border-bottom: 1px solid #B9B9B9; color: #000;">예약 리스트</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/FAQAdmin.jsp"
+					style="border-bottom: 1px solid #B9B9B9; color: #000;">자주 묻는 Q&A</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp"
+					style="border-bottom: 1px solid #B9B9B9; color: #000;">회원 관리</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/siteAdmin/mainPageAdmin.jsp"
+					style="border-bottom: 1px solid #B9B9B9; color: #000;">사이트 관리</a>
+				</li>
 			</ul>
 		</div>
 		
@@ -101,8 +108,8 @@
 					
 					<!-- 버튼 -->
 					<div class="button" style="float: right; margin-top: 3%;">
-						<button class="btn btn-primary" type="submit" style="background-color:#65B741; border-style: none; width: 80px; margin-right: 10px;">완료</button>
-						<input class="btn btn-primary" type="reset" style="background-color:#DD5353; border-style: none; width: 80px;" value="취소">
+						<a href="${ contextPath }/views/adminPage/noticeAdminBoardView.jsp"><button class="btn btn-primary" type="button" style="background-color:#65B741; border-style: none; width: 80px; margin-right: 10px;">완료</button></a>
+						<a href="${ contextPath }/views/adminPage/noticeAdminBoardView.jsp"><button class="btn btn-primary" type="button" style="background-color:#DD5353; border-style: none; width: 80px;">취소</button></a>
 					</div>
 					<!-- 버튼 -->
 				</form>
