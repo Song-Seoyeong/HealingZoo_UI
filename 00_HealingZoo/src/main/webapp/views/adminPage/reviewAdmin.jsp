@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
+<%@ taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
 <meta charset="UTF-8">
 <style>
 @font-face {
@@ -69,32 +69,29 @@ tr {
 	<%@ include file='../common/mainCategoryBar.jsp'%>
 
 	<!-- 사이드바 -->
-	<ul class="nav flex-column"
-		style="float: left; margin-top: 100px; margin-left: 50px;">
-		<li class="nav-item">
-			<h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
-		</li>
-		<li class="nav-item"><a class="nav-link active"
-			href="${ contextPath }/views/adminPage/noticeAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #000; font-weight: bold;">공지사항</a>
-		</li>
-		<li class="nav-item"><a class="nav-link"
-			href="${ contextPath }/views/adminPage/inquiryAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #000;">문의사항</a>
-		</li>
-		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/reviewAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #000;">후기 리스트</a>
-		</li>
-		<li class="nav-item"><a class="nav-link active" href="${ contextPath }/views/adminPage/bookAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #65B741;">예약 리스트</a>
-		</li>
-		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/FAQAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #000;">자주 묻는 Q&A</a>
-		</li>
-		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp"
-			style="border-bottom: 1px solid #B9B9B9; color: #000;">회원 관리</a>
-		</li>
-		<li class="nav-item"  style="border-bottom:1px solid #B9B9B9;">
+	<ul class="nav flex-column" style="float: left; margin-top: 100px; margin-left: 50px;">
+	  <li class="nav-item">
+	    <h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link active" href="${ contextPath }/views/adminPage/noticeAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;  ">공지사항</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/inquiryAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">문의사항</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#" style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-weight: bold;">후기 리스트</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/bookAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">예약 리스트</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/FAQAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">자주 묻는 Q&A</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black; font-wieght: bold;">회원 관리</a>
+	  </li>
+	  <li class="nav-item"  style="border-bottom:1px solid #B9B9B9;">
 	    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">사이트관리</button>
 	     <div class="collapse" id="orders-collapse" style="margin-left:50px">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -111,10 +108,9 @@ tr {
 	 
 	</ul>
 
-
 	<!-- 글 목록 -->
 	<div class="container" style="width: 900px; margin-top: 100px;">
-		<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">예약 리스트</h2>
+		<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">후기 리스트</h2>
 		<table class="table">
 			<thead>
 				<tr>
@@ -123,7 +119,7 @@ tr {
 					<th scope="col" style="width: 50%;">글 제목</th>
 					<th scope="col" style="width: 10%">작성자</th>
 					<th scope="col" style="width: 10%;">작성일</th>
-					<th scope="col" style="width: 12%">진행상태</th>
+					<th scope="col" style="width: 8%">조회수</th>
 				</tr>
 			</thead>
 			<tbody class="table-group-divider">
@@ -290,3 +286,5 @@ tr {
 		}
 	</script>
 	<!-- 한 행 모두 클릭 가능하게 -->
+</body>
+</html>

@@ -79,45 +79,46 @@ tr {
 	<%@ include file='../common/logoBarM.jsp'%>
 	<%@ include file='../common/mainCategoryBar.jsp'%>
 
+	
 	<!-- 사이드바 -->
-	<ul class="nav flex-column"
-		style="float: left; margin-top: 100px; margin-left: 50px;">
-		<li class="nav-item">
-			<h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
-		</li>
-		<li class="nav-item">
-       <a class="nav-link active" href="${ contextPath }/views/adminPage/noticeAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black; ">공지사항</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="${ contextPath }/views/adminPage/inquiryAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">문의사항</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="" style="border-bottom: 1px solid #B9B9B9; color: black;">후기 리스트</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="${ contextPath }/views/adminPage/bookAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">예약 리스트</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="${ contextPath }/views/adminPage/FAQAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">자주 묻는 Q&A</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">회원 관리</a>
-     </li>
-     <li class="nav-item" style="border-bottom:1px solid #B9B9B9;">
-       <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">사이트관리</button>
-        <div class="collapse" id="orders-collapse" style="margin-left:50px">
+	<ul class="nav flex-column" style="float: left; margin-top: 100px; margin-left: 50px;">
+	  <li class="nav-item">
+	    <h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link active" href="${ contextPath }/views/adminPage/noticeAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-weight:bold; ">공지사항</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/inquiryAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">문의사항</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#" style="border-bottom: 1px solid #B9B9B9; color: black;">후기 리스트</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/bookAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">예약 리스트</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/FAQAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">자주 묻는 Q&A</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black; font-wieght: bold;">회원 관리</a>
+	  </li>
+	  <li class="nav-item"  style="border-bottom:1px solid #B9B9B9;">
+	    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">사이트관리</button>
+	     <div class="collapse" id="orders-collapse" style="margin-left:50px">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="siteAdmin/mainPageAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">메인페이지</a></li>
+            <li><a href="siteAdmin/operatingAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">인사말</a></li>
             <li><a href="siteAdmin/wayAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">오시는길</a></li>
-            <li><a href="siteAdmin/showAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">프로그램 안내</a></li>
-            <li><a href="siteAdmin/operatingAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">운영시간/이용요금</a></li>
-            <li><a href="siteAdmin/animalAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">동물</a></li>
-            <li><a href="siteAdmin/mascotAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">마스코트</a></li>
+            <li><a href="siteAdmin/showAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">프로그램</a></li>
+            <li><a href="siteAdmin/operatingAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">운영시간/이용금액</a></li>
+            <li><a href="siteAdmin/animalAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">동물</a></li>
+            <li><a href="siteAdmin/mascotAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">마스코트</a></li>
           </ul>
         </div>
-     </li>
-   </ul>
-   <!-------------->
+	  </li>
+	 
+	</ul>
 
 
 	<!-- 글 목록 -->
@@ -241,7 +242,7 @@ tr {
 		<!-- 버튼 -->
 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 			<a class="btn btn-primary" id="write_button"
-				href="${contextPath}/views/adminPage/noticeBoardWrite.jsp"
+				href="${contextPath}/views/adminPage/noticeAdminBoardWrite.jsp"
 				role="button">글쓰기</a>
 			<button class="btn btn-primary" type="button" id="delete_button">삭제</button>
 		</div>
@@ -312,7 +313,7 @@ tr {
 				const parent = td.parentElement;
 				td.addEventListener('click', ()=>{
 					const boardNo = parent.children[1].innerText;
-					location.href = '${contextPath}/views/common/BoardDetail.jsp';
+					location.href = '${contextPath}/views/adminPage/noticeAdminBoardView.jsp';
 					//?category=book
 				})
 			}

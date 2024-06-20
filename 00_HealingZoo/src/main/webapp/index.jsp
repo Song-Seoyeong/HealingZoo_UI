@@ -78,7 +78,7 @@
 	    </div>
 	    <div class="col-4">
 	    	<div style='height: 330px; width: 550px;'>
-	    		<a href="views/community/book.jsp">
+	    		<a href="views/animalInfo/family.jsp">
 			 		<img src="${contextPath}/image/ferret.jpg" class="card-img" alt="가족소개" name='glanceImg2' id='glanceImg2'>
 			 	</a>
 			</div>
@@ -111,9 +111,10 @@
 				<li><a href='views/adminPage/FAQAdmin.jsp'>자주 묻는 Q&A</a></li>
 				<li><a href='views/adminPage/memberAdmin.jsp'>회원관리</a></li>
 				<li>
-					<a href='views/adminPage/mainPageAdmin.jsp'>사이트 관리</a>
+					<a href='views/adminPage/siteAdmin/mainPageAdmin.jsp'>사이트 관리</a>
 					<ul>
 						<li><a href='views/adminPage/siteAdmin/mainPageAdmin.jsp'>메인페이지</a></li>
+						<li><a href='views/adminPage/siteAdmin/greetingAdmin.jsp'>인사말</a></li>
 						<li><a href='views/adminPage/siteAdmin/wayAdmin.jsp'>오시는 길</a></li>
 						<li><a href='views/adminPage/siteAdmin/showAdmin.jsp'>프로그램안내</a></li>
 						<li><a href='views/adminPage/siteAdmin/operatingAdmin.jsp'>운영시간/이용요금</a></li>

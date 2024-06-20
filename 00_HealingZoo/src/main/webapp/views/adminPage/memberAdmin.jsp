@@ -48,7 +48,9 @@
 		padding: 10px;
 	}
 	tr{text-align:center;}
-	
+	.nav-item a:hover{
+	font-weight: bold;
+}
 	
 </style>
 <title>Insert title here</title>
@@ -78,18 +80,19 @@
 	    <a class="nav-link" href="${ contextPath }/views/adminPage/FAQAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">자주 묻는 Q&A</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-wieght: bold;">회원 관리</a>
+	    <a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-weight: bold;">회원 관리</a>
 	  </li>
 	  <li class="nav-item"  style="border-bottom:1px solid #B9B9B9;">
 	    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">사이트관리</button>
 	     <div class="collapse" id="orders-collapse" style="margin-left:50px">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="siteAdmin/mainPageAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">메인페이지</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">인사말</a></li>
-            <li><a href="siteAdmin/operatingAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">프로그램</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">운영시간/이용금액</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">동물</a></li>
-            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">마스코트</a></li>
+             <li><a href="siteAdmin/mainPageAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">메인페이지</a></li>
+            <li><a href="siteAdmin/operatingAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">인사말</a></li>
+            <li><a href="siteAdmin/wayAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">오시는길</a></li>
+            <li><a href="siteAdmin/showAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">프로그램</a></li>
+            <li><a href="siteAdmin/operatingAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">운영시간/이용금액</a></li>
+            <li><a href="siteAdmin/animalAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">동물</a></li>
+            <li><a href="siteAdmin/mascotAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">마스코트</a></li>
           </ul>
         </div>
 	  </li>
