@@ -48,7 +48,10 @@
 		padding: 10px;
 	}
 	tr{text-align:center;}
-	
+	.nav-item a:hover{
+	font-weight: bold;
+}
+	#sideButton{color: #65B741; font-weight: bold;}
 	
 </style>
 <title>Insert title here</title>
@@ -81,10 +84,11 @@
 	    <a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">회원 관리</a>
 	  </li>
 	  <li class="nav-item" style="border-bottom:1px solid #B9B9B9;">
-	    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">사이트관리</button>
+	    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false" id='sideButton'>사이트관리</button>
 	     <div class="collapse" id="orders-collapse" style="margin-left:50px">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
            <li><a href="mainPageAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">메인페이지</a></li>
+           <li><a href="greetingAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">오시는길</a></li>
             <li><a href="wayAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">오시는길</a></li>
             <li><a href="showAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">프로그램 안내</a></li>
             <li><a href="operatingAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">운영시간/이용요금</a></li>

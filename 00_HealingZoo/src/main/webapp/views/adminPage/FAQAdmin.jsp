@@ -9,7 +9,9 @@
 	width: 100%;
 	height: 70px;
 }
-
+.nav-item a:hover{
+	font-weight: bold;
+}
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -19,6 +21,50 @@
 	<%@ include file='../common/logoBarM.jsp'%>
 	<%@ include file='../common/mainCategoryBar.jsp'%>
 	<!-- /헤더 -->
+	
+	<!-- 사이드바 -->
+	<ul class="nav flex-column"
+		style="float: left; margin-top: 100px; margin-left: 50px;">
+		<li class="nav-item">
+			<h2 style="border-bottom: 7px solid #65B741; padding-bottom: 10px;">관리자 페이지</h2>
+		</li>
+		<li class="nav-item"><a class="nav-link "
+			href="${ contextPath }/views/adminPage/noticeAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #000; font-wieght: bold;">공지사항</a>
+		</li>
+		<li class="nav-item"><a class="nav-link"
+			href="${ contextPath }/views/adminPage/inquiryAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #000;">문의사항</a>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/reviewAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #000;">후기 리스트</a>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/bookAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #000;">예약 리스트</a>
+		</li>
+		<li class="nav-item"><a class="nav-link active" href="${ contextPath }/views/adminPage/FAQAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #65B741; font-weight: bold;">자주 묻는 Q&A</a>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp"
+			style="border-bottom: 1px solid #B9B9B9; color: #000;">회원 관리</a>
+		</li>
+		<li class="nav-item"  style="border-bottom:1px solid #B9B9B9;">
+	    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">사이트관리</button>
+	     <div class="collapse" id="orders-collapse" style="margin-left:50px">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="siteAdmin/mainPageAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">메인페이지</a></li>
+            <li><a href="siteAdmin/operatingAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">인사말</a></li>
+            <li><a href="siteAdmin/wayAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">오시는길</a></li>
+            <li><a href="siteAdmin/showAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">프로그램</a></li>
+            <li><a href="siteAdmin/operatingAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">운영시간/이용금액</a></li>
+            <li><a href="siteAdmin/animalAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">동물</a></li>
+            <li><a href="siteAdmin/mascotAdmin.jsp"" class="link-body-emphasis d-inline-flex text-decoration-none rounded">마스코트</a></li>
+          </ul>
+        </div>
+	  </li>
+	 
+	</ul>
+	
 
 	<div class="container">
 		<div class="accordion" id="accordionExample">

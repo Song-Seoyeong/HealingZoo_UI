@@ -6,13 +6,14 @@
 <style>
 	.inputTitleName{
 		font-size: 23px;
+	}
+	.goodsInfo{
+		overflow: hidden;
+		text-overflow: ellipsis;
 		white-space: nowrap;
+		width: 400px;
 	}
-	#showContent{
-		resize: none;
-		border: 1px solid #D9D9D9;
-		border-radius: 10px;
-	}
+	.table td:hover{cursor: pointer;}
 	.nav-item a:hover{
 	font-weight: bold;
 }
@@ -22,7 +23,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<!--  프로그램 안내 관리 페이지 -->
+	<!-- 마스코트 페이지 관리 -->
 	<%@ include file='../../common/logoBarM.jsp'%>
 	<%@ include file='../../common/mainCategoryBar.jsp'%>
 
@@ -50,7 +51,7 @@
        <a class="nav-link" href="${ contextPath }/views/adminPage/memberAdmin.jsp" style="border-bottom: 1px solid #B9B9B9; color: black;">회원 관리</a>
      </li>
      <li class="nav-item" style="border-bottom:1px solid #B9B9B9;">
-       <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" id='sideButton' data-bs-target="#orders-collapse" aria-expanded="false">사이트관리</button>
+       <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false" id='sideButton'>사이트관리</button>
         <div class="collapse" id="orders-collapse" style="margin-left:50px">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="mainPageAdmin.jsp" class="link-body-emphasis d-inline-flex text-decoration-none rounded">메인페이지</a></li>
@@ -67,71 +68,30 @@
    <!-------------->
 	
 	<!-- input 영역 -->
-	<div class="container" style="width: 900px; margin-top: 100px; margin-bottom: 100px;">
-		<div  style='margin-bottom: 100px;'>
-			<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 30px;">프로그램 안내</h2>
-			
-			<!-- 프로그램명 -->
+	<div class="container" style="width: 900px; margin-top: 100px; margin-bottom: 30%;">
+		<div style='margin-bottom: 140px;'>
+			<h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">인사말</h2>
 			<div class='row'>
-				<div class='col-1'></div>
-				<div class='col-2'>
-					<p class='inputTitleName'>프로그램명 : </p>
+				<div class='col-2 text-center'>
+					<p class='inputTitleName'>이미지 : </p>
 				</div>
-				<div class='col-7 text-center'>
-					<input class="form-control" type="text" id="showName" name='showName'>
+				<div class='col-7'>
+					<input class="form-control" width='100px' type="file" id="operImg" name='operImg' accept='image/*'>
 				</div>
-				<div class='col-2'></div>
-			</div>
-			
-			<!-- 프로그램 설명 -->
-			<div class='row' style='margin-bottom:30px;'>
-				<div class='col-1'></div>
-				<div class='col-2'>
-					<p class='inputTitleName'>프로그램 설명 : </p>
+				<div class='col-3'>
+					<button id='insertOperImg' class="btn" style='background: #EA862A; color: white;'>수정</button>
+			    	&nbsp;&nbsp;&nbsp;	
+					<button id='deleteOperImg' type="button" class="btn" style='background: #DD5353; color: white;'>삭제</button>
 				</div>
-				<div class='col-7 text-center'>
-					<textArea cols='48' rows='4' id='showContent' name='showContent'></textArea>
-				</div>
-				<div class='col-2'></div>
-			</div>
-			
-			<!-- 사진 -->
-			<div class='row' style='margin-bottom:30px;'>
-				<div class='col-1'></div>
-				<div class='col-2'>
-					<p class='inputTitleName'>프로그램 사진 : </p>
-				</div>
-				<div class='col-7 text-center'>
-					<input class="form-control" type="file" id="'showImg1'" name='showImg1' accept='image/*'>
-				</div>
-				<div class='col-2'></div>
-			</div>
-			<div class='row' style='margin-bottom:30px;'>
-				<div class='col-1'></div>
-				<div class='col-2'>
-					<p class='inputTitleName' style='font-size:20px;'>마우스 오버 사진 : </p>
-				</div>
-				<div class='col-7 text-center'>
-					<input class="form-control" type="file" id="'showImg2" name='showImg2' accept='image/*'>
-				</div>
-				<div class='col-2'></div>
-			</div>
-			<br><br>
-			
-			
-			
-			<!-- 버튼 -->
-			<div class='text-end'>
-				<button id='insert' class="btn" style='background: #60A869; color: white;'>추가</button>
-		    	&nbsp;&nbsp;&nbsp;
-				<button id='update' class="btn" style='background: #EA862A; color: white;'>수정</button>
-		    	&nbsp;&nbsp;&nbsp;
-				<button id='delete' type="button" class="btn" style='background: #DD5353; color: white;'>삭제</button>
 			</div>
 		</div>
+		
+		
 	</div>
 	
 	<!-- 하단 푸터 -->
 	<%@ include file='../../common/footer.jsp'%>
 	<!-- 하단 푸터 -->
+	
 </body>
+</html>
