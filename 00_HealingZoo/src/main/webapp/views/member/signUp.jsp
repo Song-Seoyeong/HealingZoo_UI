@@ -59,7 +59,14 @@
 				    <label for="inputEmail" class="form-label loginName">이메일</label>
 				  </div>
 				  <div class="col-7">
-				    <input type="email" class="form-control form-control-lg" id="email" name='email' placeholder="이메일를 입력하세요" required size='50'>
+				    <input type="text" class="form-control form-control-lg" id="emailId" name="emailId">
+								<span class="input-group-text">@</span>
+								<select name="emailDomain" class="form-control form-control-lg"	 style="width: 280px;">
+									<option>naver.com</option>
+									<option>gmail.com</option>
+									<option>nate.com</option>
+									<option>hanmail.net</option>
+								</select>
 				  </div>
 				  <div class="col-auto"></div>
 				</div>
