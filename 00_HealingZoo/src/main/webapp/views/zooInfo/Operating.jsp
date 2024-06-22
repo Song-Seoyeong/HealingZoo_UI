@@ -25,7 +25,7 @@
             overflow: hidden; /* 이미지가 넘어가지 않도록 함 */
         }
         .opertitle img {
-            width: 100%;
+            width: 800px; /* %하면 크기변경 */
             height: auto;
             display: block;
         }
@@ -36,7 +36,7 @@
             overflow: hidden; /* 이미지가 넘어가지 않도록 함 */
         }
         .opertitle2 img {
-            width: 100%;
+            width: 800px; /* %하면 크기변경 */
             height: auto;
             display: block;
         }
@@ -50,8 +50,7 @@
 <body>
     <%@ include file='../common/logoBar.jsp' %>
     
-    <div id='background' class='container-fluid' style='background: #B5B5B5;'>
-    
+    <div id='background' class='container-fluid' style='background: white;'>
     
     <%@ include file='../common/mainCategoryBar.jsp' %>
     <br><br>

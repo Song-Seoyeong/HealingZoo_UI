@@ -34,7 +34,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 색상 */
-            z-index: 0; /* 배경 색상이 텍스트 뒤에 오도록 설정 */
+            z-index: 0; /* 배경 색상이 텍스트 뒤에 오도록 설정 안보이는 오류는 여길 지웠다가 다시 넣기*/
             border-radius: 10px;
         }
 
@@ -68,7 +68,7 @@
             display: grid;
             grid-template-columns: 40% 60%;
             align-items: center;
-            background-color: white;
+            background-color: #B5B5B5;
             border-radius: 30px;
             overflow: hidden;
             transition: transform 0.3s ease;
@@ -148,7 +148,7 @@
 <body>
     <%@ include file='../common/logoBar.jsp' %>
 
-    <div id='background' class='container-fluid' style='background: #B5B5B5;'>
+    <div id='background' class='container-fluid' style='background: white;'>
 
     <%@ include file='../common/mainCategoryBar.jsp' %>
         <div class="protitle">

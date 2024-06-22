@@ -40,7 +40,7 @@
     }
     .prolink{
     	color: black;
-	    font-size: 1.5em;
+	    font-size: 3.0em; /* 자기화면에 글씨크기가 작다면 이녀석입니다. */
 	    padding-bottom: 5px;
 	    border-bottom: 2px solid black;
     }
@@ -76,16 +76,18 @@
 
     .animal-card .content {
         width: 60%;
-        padding: 15px;
+        padding: 45px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
 
     .animal-card .title {
         font-size: 1.5em;
         margin: 0;
         color: #333;
+        letter-spacing: 5px; /* 호 랑 이 간격조절 */
     }
 
     .animal-card .description {
@@ -98,7 +100,7 @@
 <body>
     <%@ include file='../common/logoBar.jsp'%>
     
-    <div id='background' class='container-fluid' style='background: #E6E6E6;'>
+    <div id='background' class='container-fluid' style='background: white;'>
     
     <%@ include file='../common/mainCategoryBar.jsp'%>
 	
@@ -119,7 +121,7 @@
 	            <img src="${contextPath}/image2/새끼 호랑이.jpg" alt="호랑이">
 	        </div>
 	        <div class="content">
-	            <h2 class="title">호랑이</h2>
+	            <h2 class="title">호랑이</h2><br> <!-- 간격 조절은 content title로 -->
 	            <p class="description">분류: 대형 고양이과</p>
 	            <p class="description">서식지: 숲 속</p>
 	            <p class="description">멸종위기급수: 지역절멸(RE)</p>

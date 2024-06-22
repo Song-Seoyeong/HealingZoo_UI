@@ -26,8 +26,8 @@
 	  }
 	  .gret-mainimg img{
 	  	display: inline-block;
-	  	width: 65%;
-	  	height: 65%;
+	  	width: 1200px;
+	  	height: auto;
 	  	margin: 0;
 	  }
 	  .staffs-container {
@@ -37,7 +37,7 @@
 	      margin-top: 20px;
 	      box-sizing: border-box;
 	      max-width: 1200px;
-	      width: 100%;
+	      width: 1050px;
 	      height: 800px;
 	      display: flex;
 	      flex-direction: column;
@@ -97,7 +97,7 @@
 <body>
 	<%@ include file='../common/logoBar.jsp' %>
 	
-	<div id='background' class='container-fluid' style='background: #B5B5B5;'>
+	<div id='background' class='container-fluid' style='background: white;'>
 	<%@ include file='../common/mainCategoryBar.jsp' %>
 	<div class='margin'></div>
 	
