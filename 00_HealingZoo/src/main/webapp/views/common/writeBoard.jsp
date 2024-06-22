@@ -18,7 +18,6 @@
 	<!-- 헤더 -->
 	<%@ include file='../common/logoBar.jsp' %>
 	
-	<div id='background' style='background: #B5B5B5;'>
 	<%@ include file='../common/mainCategoryBar.jsp' %>
 	<!-- /헤더 -->
 		<div class='margin'></div>
@@ -46,7 +45,7 @@
 					<div class='row'>
 						<div class='col-1'></div>
 						<div class='col-5 text-start'>
-							<input type='password' name='boardPwd' class='inputBoard' placeholder='글 비밀번호를 입력해주세요' size='20'/>
+							<input type='password' name='boardPwd' class='inputBoard form-control' placeholder='글 비밀번호를 입력해주세요' size='20'/>
 						</div>
 						<div class='col-5 text-end'>
 							 <input class="form-control" width='100px' type="file" id="formFile" name='img'>
@@ -69,7 +68,6 @@
 		</form>
 			
 		<div class='margin'></div>
-	</div>
 	<!-- 푸터 -->
 	<%@ include file='../common/footer.jsp' %>
 	<!-- /푸터 -->

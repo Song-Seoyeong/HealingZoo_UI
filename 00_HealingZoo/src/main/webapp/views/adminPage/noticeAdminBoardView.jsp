@@ -13,14 +13,6 @@
     	font-style: normal;
 	}
 	* {font-family: 'NanumSquareRound';}
- 	
- 	#background { 
- 		width: 100%;
- 		height: 100%; 
- 		background-color: #B9B9B9; 
- 		padding-top: 6%;
- 		padding-bottom: 100px;
- 	}
  	.nav-item a:hover{
 	font-weight: bold;
 }
@@ -32,7 +24,6 @@
 	<%@ include file='../common/mainCategoryBar.jsp' %>
 	<%@ include file='../common/adminSidebar.jsp'%>
 	<!-- /헤더 -->
-	<div id="background">
 		<!-- 글 작성 -->
 		<div class="container" id="box" style="border: 1px solid white; background: white; border-radius: 10px; width: 1000px; height: 100%; padding: 3%;">
 			<h2 style="border-left: 7px solid #65B741; padding-left: 15px; font-weight: bold;">힐링 동물원 공지사항</h2>
@@ -81,7 +72,6 @@
 				</form>
 			</div>
 		</div>
-	</div>
 	<!-- 글 작성 -->
 	
 	<!-- 푸터 -->
