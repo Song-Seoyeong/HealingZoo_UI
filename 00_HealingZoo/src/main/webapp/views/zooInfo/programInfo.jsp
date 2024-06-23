@@ -135,8 +135,7 @@
             }
 
             .image-container {
-                width: 100%;
-                height: auto;
+                width: 300px;
             }
 
             .procard .text {

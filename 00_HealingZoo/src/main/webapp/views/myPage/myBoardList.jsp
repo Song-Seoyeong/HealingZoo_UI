@@ -154,7 +154,7 @@
 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 			<button class="btn btn-primary" type="button" id="delete_button">삭제</button>
 		</div>
-		<!-- 페이지네이션 -->>
+		<!-- 페이지네이션 -->
 		<div class="container">
 		    <div class="pagination-container" style="margin-bottom: 20px;">
 		      <div class="prev-button" style="padding:10px;">&lt;</div>

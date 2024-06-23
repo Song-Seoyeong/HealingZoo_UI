@@ -100,7 +100,6 @@
 <body>
     <%@ include file='../common/logoBar.jsp'%>
     
-    <div id='background' class='container-fluid' style='background: white;'>
     
     <%@ include file='../common/mainCategoryBar.jsp'%>
 	

@@ -189,7 +189,7 @@
 			<button class="btn btn-primary" type="button" id="write_button" style="background-color:orange;">수정</button>
 			<button class="btn btn-primary" type="button" id="delete_button">삭제</button>
 		</div>
-		<!-- 페이지네이션 -->>
+		<!-- 페이지네이션 -->
 		<div class="container">
 		    <div class="pagination-container" style="margin-bottom: 20px;">
 		      <div class="prev-button" style="padding:10px;">&lt;</div>
