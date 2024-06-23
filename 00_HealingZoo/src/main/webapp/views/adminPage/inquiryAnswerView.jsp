@@ -1,0 +1,93 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	@font-face {
+	    font-family: 'NanumSquareRound';
+	    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+	    font-weight: normal;
+    	font-style: normal;
+	}
+	* {font-family: 'NanumSquareRound';}
+ 	
+ 	#background { 
+ 		width: 100%;
+ 		height: 100%; 
+ 		background-color: white; 
+ 		padding-top: 6%;
+ 		padding-bottom: 100px;
+ 	}
+ 	.nav-item a:hover{
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<!-- 헤더 -->
+	<%@ include file='../common/logoBarM.jsp' %>
+	<%@ include file='../common/mainCategoryBar.jsp' %>
+	<%@ include file='../common/adminSidebar.jsp'%>
+	<!-- /헤더 -->
+	<div id="background">
+		<!-- 글 작성 -->
+		<div class="container" id="box" style="border: 1px solid white; background: white; border-radius: 10px; width: 1000px; height: 100%; padding: 3%;">
+			<h2 style="border-left: 7px solid #65B741; padding-left: 15px; font-weight: bold;">방문 관련 문의</h2>
+			<div style="border-bottom: 3px solid black; margin-bottom: 10px; margin-top: 20px;"></div>
+			
+			<div class="container" style="padding: 3%;">
+				<form>	
+					
+					<!-- 글 제목 --
+					
+					
+					<!-- 글 내용 -->
+					<div class="mb-3">
+						<textarea class="form-control" id="board" style="width: 100%; height: 700px; padding: 3%; line-height: 200%">
+방문 관련 문의
+홍길동
+010-1234-5678
+안녕하세요,
+저는 다음 주말에 가족과 함께 힐링 동물원 방문하려고 계획하고 있습니다. 몇 가지 궁금한 사항이 있어 문의 드립니다.
+운영 시간:
+동물원의 운영 시간은 어떻게 되나요? 주말과 평일 운영 시간이 다른지 궁금합니다.
+입장료:
+성인, 어린이, 노인 입장료는 각각 얼마인가요? 그리고 가족 할인이나 단체 할인 혜택이 있는지 알려주세요.
+주차 시설:
+동물원 내에 주차장이 있는지, 있다면 주차 요금은 얼마인지 알고 싶습니다.
+특별 행사:
+이번 주말에 특별한 이벤트나 행사가 있는지 궁금합니다. 있다면 사전에 예약이 필요한지 알려주세요.
+편의 시설:
+동물원 내에 음식점이나 카페가 있는지, 그리고 피크닉 공간이 마련되어 있는지 알고 싶습니다.
+장애인 편의 시설:
+휠체어 대여 서비스나 장애인을 위한 특별한 편의 시설이 마련되어 있는지 문의드립니다.
+애완동물 동반 가능 여부:
+애완동물(강아지)을 동반할 수 있는지, 동반이 불가능하다면 애완동물을 맡길 수 있는 시설이 있는지 궁금합니다.
+위 질문들에 대해 답변해주시면 방문 계획을 세우는 데 큰 도움이 될 것 같습니다.
+감사합니다.
+						</textarea>
+					</div>
+					<!-- 글 내용 -->
+					
+					<!-- 버튼 -->
+					<div class="button" style="float: right; margin-top: 3%;">
+						<button class="btn btn-primary" type="submit" style="background-color:#65B741; border-style: none; width: 100px; margin-right: 10px;">답변하기</button>
+						<input class="btn btn-primary" type="button" style="background-color:#DD5353; border-style: none; width: 80px;" value="삭제">
+					</div>
+					<!-- 버튼 -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 글 작성 -->
+	
+	<!-- 푸터 -->
+	<%@ include file='../common/footer.jsp' %>
+	<!-- /푸터 -->
+	
+	
+</body>
+</html>
