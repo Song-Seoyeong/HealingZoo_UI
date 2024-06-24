@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>힐링동물원 인사말</title>
+<title>인사말</title>
 <!-- <link href='../../css/greetingCSS.css' type='text/css' rel='stylesheet'>
  --><style>
 	  #background{padding:0px; margin:0px;}
@@ -29,6 +29,8 @@
 	  	width: 1200px;
 	  	height: auto;
 	  	margin: 0;
+	  	border: 1px solid #B5B5B5;
+	  	border-radius: 25px;
 	  }
 	  .staffs-container {
 	      background-color: #fff;
@@ -107,7 +109,7 @@
     
 
 	<!-- 인사말 소개 -->
-	<div class="container text-center" style='margin-top: 30px;x'>
+	<div class="container text-center" style='margin-top: 30px;'>
 	  <div class="row">
 	    <div class="col"></div>
 	    <div class="col-10">

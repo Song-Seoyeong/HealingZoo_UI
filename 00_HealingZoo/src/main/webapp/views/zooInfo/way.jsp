@@ -21,6 +21,7 @@
         .waypoint {
             text-align: center;
             margin: 0px;
+            font-size: 3.0em;
         }
 
         .waycontent {

@@ -61,7 +61,7 @@
 	
 	<!-- 글 목록 -->
 	<div class="container" style="width: 900px; margin-top: 100px;  ">
-		 <h3 ><img src="${ contextPath }/image/sidebar.svg" style="height:50px"></img>내 정보 수정</h3>
+		  <h2 style="border-left: 5px solid #65B741; padding-left: 10px; display: inline-block; margin-bottom: 15px;">내 정보 보기</h2>
 			<hr style="border:0; height:5px; background:black"/>
 			<form>
 				<label>이름</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="이름" name="name" style="width:500px;" readonly>

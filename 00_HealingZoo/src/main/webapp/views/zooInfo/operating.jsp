@@ -34,11 +34,14 @@
             padding: 0;
             border-radius: 10px;
             overflow: hidden; /* 이미지가 넘어가지 않도록 함 */
+            
         }
         .opertitle2 img {
             width: 800px; /* %하면 크기변경 */
             height: auto;
+            margin: auto;
             display: block;
+            
         }
         .opercontent {
             display: flex;

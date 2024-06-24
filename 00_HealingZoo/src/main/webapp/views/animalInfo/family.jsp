@@ -22,13 +22,14 @@
     }
 
     .nav ul li {
-        margin: 0 20px;
+        margin: 0 40px;
     }
 
     .nav ul li a {
         text-decoration: none;
         color: black;
-        font-size: 1.2em;
+        font-size: 2.0em;
+        font-weight:700;
         padding-bottom: 5px;
         border-bottom: 2px solid green;
         transition: border-bottom 0.3s ease;
@@ -40,7 +41,7 @@
     }
     .prolink{
     	color: black;
-	    font-size: 3.0em; /* 자기화면에 글씨크기가 작다면 이녀석입니다. */
+	    font-size: 1.2em; /* 자기화면에 글씨크기가 작다면 이녀석입니다. */
 	    padding-bottom: 5px;
 	    border-bottom: 2px solid black;
     }
@@ -54,22 +55,23 @@
     .animal-card {
         background-color: white;
         border-radius: 10px;
-        width: 1100px;
-        height: auto;
+        width: 920px;
+        height: 280PX;
         margin: 30px;
         overflow: hidden;
         display: flex;
+        border: 1px solid #B5B5B5;
     }
 
     .animal-card .image-container {
-        width: 40%;
-        height: auto;
+        width: 550px;
+        height: 100%;
         
     }
 
     .animal-card img { /* 사진의 세로길이가 적당하면 사이즈에 맞춰 작아지고 */
         width: 100%;	/* 300px보다 커질수 없게 해줬다.  */
-        height: auto;
+        height: 100%;
         max-height: 300px;
         object-fit: cover;
     }
@@ -117,7 +119,7 @@
     <div class="animalcontainer">
 	    <div class="animal-card">
 	        <div class="image-container">
-	            <img src="${contextPath}/image2/새끼 호랑이.jpg" alt="호랑이">
+	            <img src="${contextPath}/image2/tiger.jpg" alt="호랑이">
 	        </div>
 	        <div class="content">
 	            <h2 class="title">호랑이</h2><br> <!-- 간격 조절은 content title로 -->
@@ -130,7 +132,7 @@
 	    <br>
 	    <div class="animal-card">
 	        <div class="image-container">
-	            <img src="${contextPath}/image2/수달정면.jpg" alt="수달">
+	            <img src="${contextPath}/image2/otter.jpg" alt="수달">
 	        </div>
 	        <div class="content">
 	            <h2 class="title">수달</h2>
@@ -143,7 +145,7 @@
 	    <br>
 	    <div class="animal-card">
 	        <div class="image-container">
-	            <img src="${contextPath}/image2/옆판다.jpg" alt="레서판다">
+	            <img src="${contextPath}/image2/panda.jpg" alt="레서판다">
 	        </div>
 	        <div class="content">
 	            <h2 class="title">레서판다</h2>
@@ -156,7 +158,7 @@
 	    <br>
 	    <div class="animal-card">
 	        <div class="image-container">
-	            <img src="${contextPath}/image2/더블 담비.jpg" alt="담비">
+	            <img src="${contextPath}/image2/marten.jpg" alt="담비">
 	        </div>
 	        <div class="content">
 	            <h2 class="title">담비</h2>
@@ -169,7 +171,7 @@
 	    <br>
 	    <div class="animal-card">
 	        <div class="image-container">
-	            <img src="${contextPath}/image2/바윗여우.jpg" alt="붉은 여우">
+	            <img src="${contextPath}/image2/fox.jpg" alt="붉은 여우">
 	        </div>
 	        <div class="content">
 	            <h2 class="title">붉은 여우</h2>
@@ -182,7 +184,7 @@
 	    <br>
 	    <div class="animal-card">
 	        <div class="image-container">
-	            <img src="${contextPath}/image2/라쿤.jpg" alt="라쿤">
+	            <img src="${contextPath}/image2/raccoon.jpg" alt="라쿤">
 	        </div>
 	        <div class="content">
 	            <h2 class="title">라쿤</h2>
@@ -195,7 +197,7 @@
 	    <br>
 	    <div class="animal-card">
 	        <div class="image-container">
-	            <img src="${contextPath}/image2/나무등반다람쥐.jpg" alt="하늘다람쥐">
+	            <img src="${contextPath}/image2/flyingSquirrel.jpg" alt="하늘다람쥐">
 	        </div>
 	        <div class="content">
 	            <h2 class="title">하늘다람쥐</h2>
@@ -212,7 +214,7 @@
         <section id="조류">
             <div class="animal-card">
                 <div class="image-container">
-                    <img src="${contextPath}/image2/수리부엉이.jpg" alt="수리부엉이">
+                    <img src="${contextPath}/image2/owl.jpg" alt="수리부엉이">
                 </div>
                 <div class="content">
                     <h2 class="title">수리부엉이</h2>
@@ -225,7 +227,7 @@
             <br>
             <div class="animal-card">
                 <div class="image-container">
-                    <img src="${contextPath}/image2/밑앵무.jpg" alt="푸른목금강앵무">
+                    <img src="${contextPath}/image2/parrot.jpg" alt="푸른목금강앵무">
                 </div>
                 <div class="content">
                     <h2 class="title">푸른목금강앵무</h2>
@@ -238,7 +240,7 @@
             <br>
             <div class="animal-card">
                 <div class="image-container">
-                    <img src="${contextPath}/image2/둥지딱새.jpg" alt="긴꼬리딱새">
+                    <img src="${contextPath}/image2/flycatcher.jpg" alt="긴꼬리딱새">
                 </div>
                 <div class="content">
                     <h2 class="title">긴꼬리딱새</h2>
